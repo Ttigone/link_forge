@@ -1,0 +1,9 @@
+﻿   Qt/MSBuild: 3.4.1.0
+   Qt: 6.8.3
+  link_forge.cpp
+  main.cpp
+  qrc_link_forge.cpp
+  moc_link_forge.cpp
+  link_forge.vcxproj -> G:\0_self_develop_project\Qt_self-pro\link_forge\x64\Debug\link_forge.exe
+  'pwsh.exe' 不是内部或外部命令，也不是可运行的程序
+  或批处理文件。
