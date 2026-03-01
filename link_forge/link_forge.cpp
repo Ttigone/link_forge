@@ -94,6 +94,7 @@ void link_forge::OnSendClicked()
     message["address"]  = 0;
     message["quantity"] = 10;
 
+    if (!controller_->SendMessage(message)) {
         QMessageBox::warning(this, "Send Error", "Failed to queue message");
     }
 }
