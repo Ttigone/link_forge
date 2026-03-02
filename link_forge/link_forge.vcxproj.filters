@@ -23,31 +23,152 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>qml;cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>qrc;rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Form Files">
+      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+    </Filter>
+    <Filter Include="Translation Files">
+      <UniqueIdentifier>{639EADAA-A684-42e4-A9AD-28FC9BCB8F7C}</UniqueIdentifier>
+      <Extensions>ts</Extensions>
+    </Filter>
+    <Filter Include="application">
+      <UniqueIdentifier>{A1B2C3D4-0001-0001-0001-000000000001}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core">
+      <UniqueIdentifier>{A1B2C3D4-0002-0002-0002-000000000002}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="transport">
+      <UniqueIdentifier>{A1B2C3D4-0003-0003-0003-000000000003}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="protocol">
+      <UniqueIdentifier>{A1B2C3D4-0004-0004-0004-000000000004}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="utils">
+      <UniqueIdentifier>{A1B2C3D4-0005-0005-0005-000000000005}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
     <QtRcc Include="link_forge.qrc">
       <Filter>Resource Files</Filter>
     </QtRcc>
     <QtUic Include="link_forge.ui">
       <Filter>Form Files</Filter>
     </QtUic>
+    <!-- QtMoc entries -->
     <QtMoc Include="link_forge.h">
       <Filter>Header Files</Filter>
     </QtMoc>
+    <QtMoc Include="application\main_controller.h">
+      <Filter>application</Filter>
+    </QtMoc>
+    <QtMoc Include="application\message_model.h">
+      <Filter>application</Filter>
+    </QtMoc>
+    <QtMoc Include="core\communication_manager.h">
+      <Filter>core</Filter>
+    </QtMoc>
+    <QtMoc Include="core\channel_manager.h">
+      <Filter>core</Filter>
+    </QtMoc>
+    <QtMoc Include="core\plugin_manager.h">
+      <Filter>core</Filter>
+    </QtMoc>
+    <QtMoc Include="protocol\custom_protocol.h">
+      <Filter>protocol</Filter>
+    </QtMoc>
+    <QtMoc Include="protocol\frame_parser.h">
+      <Filter>protocol</Filter>
+    </QtMoc>
+    <QtMoc Include="protocol\frame_protocol.h">
+      <Filter>protocol</Filter>
+    </QtMoc>
+    <QtMoc Include="protocol\modbus_protocol.h">
+      <Filter>protocol</Filter>
+    </QtMoc>
+    <QtMoc Include="transport\can_transport.h">
+      <Filter>transport</Filter>
+    </QtMoc>
+    <QtMoc Include="transport\serial_transport.h">
+      <Filter>transport</Filter>
+    </QtMoc>
+    <QtMoc Include="transport\socket_transport.h">
+      <Filter>transport</Filter>
+    </QtMoc>
+    <QtMoc Include="utils\Logger.h">
+      <Filter>utils</Filter>
+    </QtMoc>
+    <!-- ClCompile entries -->
     <ClCompile Include="link_forge.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ResourceCompile Include="$pro_name$.rc">
-    </ResourceCompile>
-    <None Include="$pro_name$.ico">
-      <Filter>Resource Files</Filter>
-    </None>
-    <None Include="$pro_name$.def">
-      <Filter>Resource Files</Filter>
-    </None>
-    <None Include="link_forge.ico">
-      <Filter>Resource Files</Filter>
-    </None>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="application\main_controller.cpp">
+      <Filter>application</Filter>
+    </ClCompile>
+    <ClCompile Include="application\message_model.cpp">
+      <Filter>application</Filter>
+    </ClCompile>
+    <ClCompile Include="core\communication_manager.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="core\channel_manager.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="core\plugin_manager.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="core\protocol_factory.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="core\transport_factory.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="protocol\custom_protocol.cpp">
+      <Filter>protocol</Filter>
+    </ClCompile>
+    <ClCompile Include="protocol\frame_parser.cpp">
+      <Filter>protocol</Filter>
+    </ClCompile>
+    <ClCompile Include="protocol\frame_protocol.cpp">
+      <Filter>protocol</Filter>
+    </ClCompile>
+    <ClCompile Include="protocol\modbus_protocol.cpp">
+      <Filter>protocol</Filter>
+    </ClCompile>
+    <ClCompile Include="transport\can_transport.cpp">
+      <Filter>transport</Filter>
+    </ClCompile>
+    <ClCompile Include="transport\serial_transport.cpp">
+      <Filter>transport</Filter>
+    </ClCompile>
+    <ClCompile Include="transport\socket_transport.cpp">
+      <Filter>transport</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\ConfigManager.cpp">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\Logger.cpp">
+      <Filter>utils</Filter>
+    </ClCompile>
     <ResourceCompile Include="link_forge.rc">
       <Filter>Resource Files</Filter>
     </ResourceCompile>
+    <None Include="link_forge.ico">
+      <Filter>Resource Files</Filter>
+    </None>
   </ItemGroup>
 </Project>

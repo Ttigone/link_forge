@@ -119,5 +119,7 @@ namespace Can {
     /// Enable loopback mode (bool, default false).
     inline constexpr std::string_view kLoopback  = "canLoopback";
 } // namespace Can
+
+} // namespace TypeNames
 } // namespace Core
 } // namespace LinkForge

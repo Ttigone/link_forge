@@ -15,8 +15,7 @@
     <Keyword>QtVS_v304</Keyword>
     <WindowsTargetPlatformVersion Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">10.0</WindowsTargetPlatformVersion>
     <WindowsTargetPlatformVersion Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">10.0</WindowsTargetPlatformVersion>
-    <QtMsBuild Condition="'$(QtMsBuild)'=='' OR !Exists('$(QtMsBuild)\qt.targets')"
-      >$(MSBuildProjectDirectory)\QtMsBuild</QtMsBuild>
+    <QtMsBuild Condition="'$(QtMsBuild)'=='' OR !Exists('$(QtMsBuild)\qt.targets')">$(MSBuildProjectDirectory)\QtMsBuild</QtMsBuild>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'" Label="Configuration">
@@ -46,11 +45,8 @@
     <QtModules>core;gui;network;widgets;bluetooth;serialbus;serialport</QtModules>
     <QtBuildConfig>release</QtBuildConfig>
   </PropertyGroup>
-  <Target Name="QtMsBuildNotFound"
-    BeforeTargets="CustomBuild;ClCompile"
-    Condition="!Exists('$(QtMsBuild)\qt.targets') or !Exists('$(QtMsBuild)\qt.props')">
-    <Message Importance="High"
-      Text="QtMsBuild: could not locate qt.targets, qt.props; project may not build correctly." />
+  <Target Name="QtMsBuildNotFound" BeforeTargets="CustomBuild;ClCompile" Condition="!Exists('$(QtMsBuild)\qt.targets') or !Exists('$(QtMsBuild)\qt.props')">
+    <Message Importance="High" Text="QtMsBuild: could not locate qt.targets, qt.props; project may not build correctly." />
   </Target>
   <ImportGroup Label="ExtensionSettings" />
   <ImportGroup Label="Shared" />
@@ -67,6 +63,11 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
   </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+  </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'" Label="Configuration">
     <ClCompile>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
@@ -96,11 +97,40 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <QtRcc Include="link_forge.qrc"/>
-    <QtUic Include="link_forge.ui"/>
-    <QtMoc Include="link_forge.h"/>
-    <ClCompile Include="link_forge.cpp"/>
-    <ClCompile Include="main.cpp"/>
+    <QtRcc Include="link_forge.qrc" />
+    <QtUic Include="link_forge.ui" />
+    <QtMoc Include="link_forge.h" />
+    <QtMoc Include="application\main_controller.h" />
+    <QtMoc Include="application\message_model.h" />
+    <QtMoc Include="core\communication_manager.h" />
+    <QtMoc Include="core\channel_manager.h" />
+    <QtMoc Include="core\plugin_manager.h" />
+    <QtMoc Include="protocol\custom_protocol.h" />
+    <QtMoc Include="protocol\frame_parser.h" />
+    <QtMoc Include="protocol\frame_protocol.h" />
+    <QtMoc Include="protocol\modbus_protocol.h" />
+    <QtMoc Include="transport\can_transport.h" />
+    <QtMoc Include="transport\serial_transport.h" />
+    <QtMoc Include="transport\socket_transport.h" />
+    <QtMoc Include="utils\Logger.h" />
+    <ClCompile Include="link_forge.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="application\main_controller.cpp" />
+    <ClCompile Include="application\message_model.cpp" />
+    <ClCompile Include="core\communication_manager.cpp" />
+    <ClCompile Include="core\channel_manager.cpp" />
+    <ClCompile Include="core\plugin_manager.cpp" />
+    <ClCompile Include="core\protocol_factory.cpp" />
+    <ClCompile Include="core\transport_factory.cpp" />
+    <ClCompile Include="protocol\custom_protocol.cpp" />
+    <ClCompile Include="protocol\frame_parser.cpp" />
+    <ClCompile Include="protocol\frame_protocol.cpp" />
+    <ClCompile Include="protocol\modbus_protocol.cpp" />
+    <ClCompile Include="transport\can_transport.cpp" />
+    <ClCompile Include="transport\serial_transport.cpp" />
+    <ClCompile Include="transport\socket_transport.cpp" />
+    <ClCompile Include="utils\ConfigManager.cpp" />
+    <ClCompile Include="utils\Logger.cpp" />
     <None Include="link_forge.ico" />
     <ResourceCompile Include="link_forge.rc" />
   </ItemGroup>
