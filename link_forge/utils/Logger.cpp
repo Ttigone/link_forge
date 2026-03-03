@@ -30,10 +30,12 @@ bool Logger::EnableFileLogging(const QString& file_path)
 
     QFileInfo fi(file_path);
     QDir dir = fi.dir();
+    if (!dir.exists()) {
         dir.mkpath(".");
     }
 
     log_file_ = std::make_unique<QFile>(file_path);
+    if (!log_file_->open(QIODevice::Append | QIODevice::Text)) {
         qWarning() << "Logger: failed to open" << file_path;
         log_file_.reset();
         return false;

@@ -41,10 +41,10 @@ public:
     // ── ITransport ──────────────────────────────────────────────────────────
     bool     Connect(const QVariantMap& config) override;
     void     Disconnect() override;
-    bool     Send(const QByteArray& data) override;
+    qint64   Send(const QByteArray& data) override;
     State    GetState() const override;
     Type     GetType() const override;
-    QString  GetName() const override;
+    QString  GetName() const;
     QVariantMap GetConfig() const override;
 
     // ── CAN-specific ────────────────────────────────────────────────────────

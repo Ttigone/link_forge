@@ -71,6 +71,7 @@ bool ConfigManager::LoadConfig(const QString& file_path)
     const QString path = file_path.isEmpty() ? DefaultConfigPath() : file_path;
 
     QFile file(path);
+    if (!file.open(QIODevice::ReadOnly)) {
         qWarning() << "ConfigManager: cannot open" << path;
         return false;
     }
@@ -83,6 +84,8 @@ bool ConfigManager::LoadConfig(const QString& file_path)
         return false;
     }
 
+    if (!doc.isObject()) {
+        qWarning() << "ConfigManager: root element is not a JSON object";
         return false;
     }
 
@@ -100,10 +103,12 @@ bool ConfigManager::SaveConfig(const QString& file_path)
 
     QFileInfo fi(path);
     QDir dir = fi.dir();
+    if (!dir.exists()) {
         dir.mkpath(".");
     }
 
     QFile file(path);
+    if (!file.open(QIODevice::WriteOnly | QIODevice::Truncate)) {
         qWarning() << "ConfigManager: cannot write to" << path;
         return false;
     }

@@ -39,9 +39,9 @@ bool TcpSocketTransport::Connect(const QVariantMap& config)
     }
     config_ = config;
 
-    const QString host = config.value(QString(Core::TypeNames::Config::kHost), "127.0.0.1").toString();
+    const QString host = config.value(QString::fromLatin1(Core::TypeNames::Config::kHost.data()), "127.0.0.1").toString();
     const quint16 port = static_cast<quint16>(
-        config.value(QString(Core::TypeNames::Config::kPort), 8080).toUInt());
+        config.value(QString::fromLatin1(Core::TypeNames::Config::kPort.data()), 8080).toUInt());
 
     SetState(State::Connecting);
     // Non-blocking -- result arrives via OnConnected / OnErrorOccurred.
@@ -62,6 +62,7 @@ void TcpSocketTransport::Disconnect()
 
 qint64 TcpSocketTransport::Send(const QByteArray& data)
 {
+    if (state_ != State::Connected) {
         qWarning() << "TcpSocketTransport::Send: not connected";
         return -1;
     }
@@ -91,9 +92,11 @@ void TcpSocketTransport::OnDisconnected()
 
 void TcpSocketTransport::OnReadyRead()
 {
+    if (state_ != State::Connected) {
         return;
     }
     const QByteArray data = socket_->readAll();
+    if (!data.isEmpty()) {
         emit DataReceived(data);
     }
 }
@@ -141,13 +144,13 @@ bool UdpSocketTransport::Connect(const QVariantMap& config)
     }
     config_ = config;
 
-    const QString local_host = config.value(QString(Core::TypeNames::Config::kLocalHost), "0.0.0.0").toString();
+    const QString local_host = config.value(QString::fromLatin1(Core::TypeNames::Config::kLocalHost.data()), "0.0.0.0").toString();
     const quint16 local_port = static_cast<quint16>(
-        config.value(QString(Core::TypeNames::Config::kLocalPort), 0).toUInt());
+        config.value(QString::fromLatin1(Core::TypeNames::Config::kLocalPort.data()), 0).toUInt());
 
-    remote_host_ = QHostAddress(config.value(QString(Core::TypeNames::Config::kRemoteHost), "127.0.0.1").toString());
+    remote_host_ = QHostAddress(config.value(QString::fromLatin1(Core::TypeNames::Config::kRemoteHost.data()), "127.0.0.1").toString());
     remote_port_ = static_cast<quint16>(
-        config.value(QString(Core::TypeNames::Config::kRemotePort), 8080).toUInt());
+        config.value(QString::fromLatin1(Core::TypeNames::Config::kRemotePort.data()), 8080).toUInt());
 
     SetState(State::Connecting);
 
@@ -180,6 +183,7 @@ void UdpSocketTransport::Disconnect()
 
 qint64 UdpSocketTransport::Send(const QByteArray& data)
 {
+    if (state_ != State::Connected) {
         qWarning() << "UdpSocketTransport::Send: not connected";
         return -1;
     }
@@ -193,12 +197,14 @@ qint64 UdpSocketTransport::Send(const QByteArray& data)
 
 void UdpSocketTransport::OnReadyRead()
 {
+    if (state_ != State::Connected) {
         return;
     }
     while (socket_->hasPendingDatagrams()) {
         QByteArray datagram;
         datagram.resize(static_cast<int>(socket_->pendingDatagramSize()));
         socket_->readDatagram(datagram.data(), datagram.size());
+        if (!datagram.isEmpty()) {
             emit DataReceived(datagram);
         }
     }

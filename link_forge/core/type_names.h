@@ -1,6 +1,6 @@
 #pragma once
 
-#include <string_view>  // C++17
+#include <QString>
 
 namespace LinkForge {
 namespace Core {
@@ -10,31 +10,31 @@ namespace TypeNames {
 // Transport type names -- canonical tokens used by the factory.
 // ---------------------------------------------------------------------------
 namespace Transport {
-    inline constexpr std::string_view kSerial    = "Serial";
-    inline constexpr std::string_view kTcp       = "TCP";
-    inline constexpr std::string_view kUdp       = "UDP";
-    inline constexpr std::string_view kCan       = "CAN";
-    inline constexpr std::string_view kUnknown   = "Unknown";
+    inline constexpr QLatin1String kSerial   {"Serial"};
+    inline constexpr QLatin1String kTcp      {"TCP"};
+    inline constexpr QLatin1String kUdp      {"UDP"};
+    inline constexpr QLatin1String kCan      {"CAN"};
+    inline constexpr QLatin1String kUnknown  {"Unknown"};
 
     // Aliases recognised by the factory (not canonical output).
-    inline constexpr std::string_view kUart      = "uart";
-    inline constexpr std::string_view kTcpSocket = "tcpsocket";
-    inline constexpr std::string_view kUdpSocket = "udpsocket";
+    inline constexpr QLatin1String kUart      {"uart"};
+    inline constexpr QLatin1String kTcpSocket {"tcpsocket"};
+    inline constexpr QLatin1String kUdpSocket {"udpsocket"};
 } // namespace Transport
 
 // ---------------------------------------------------------------------------
 // Protocol type names.
 // ---------------------------------------------------------------------------
 namespace Protocol {
-    inline constexpr std::string_view kModbus  = "Modbus";
-    inline constexpr std::string_view kMavLink = "MAVLink";
-    inline constexpr std::string_view kUds     = "UDS";
-    inline constexpr std::string_view kDbc     = "DBC";
-    inline constexpr std::string_view kCustom  = "Custom";
-    inline constexpr std::string_view kFrame   = "Frame";  ///< FrameProtocol
-    inline constexpr std::string_view kUnknown = "Unknown";
-    inline constexpr std::string_view kJson    = "json";
-    inline constexpr std::string_view kBinary  = "binary";
+    inline constexpr QLatin1String kModbus  {"Modbus"};
+    inline constexpr QLatin1String kMavLink {"MAVLink"};
+    inline constexpr QLatin1String kUds     {"UDS"};
+    inline constexpr QLatin1String kDbc     {"DBC"};
+    inline constexpr QLatin1String kCustom  {"Custom"};
+    inline constexpr QLatin1String kFrame   {"Frame"};  ///< FrameProtocol
+    inline constexpr QLatin1String kUnknown {"Unknown"};
+    inline constexpr QLatin1String kJson    {"json"};
+    inline constexpr QLatin1String kBinary  {"binary"};
 } // namespace Protocol
 
 // ---------------------------------------------------------------------------
@@ -42,66 +42,66 @@ namespace Protocol {
 // ---------------------------------------------------------------------------
 namespace Config {
     // General
-    inline constexpr std::string_view kTimeout  = "timeout";
-    inline constexpr std::string_view kMode     = "mode";
-    inline constexpr std::string_view kSubType  = "subType";
+    inline constexpr QLatin1String kTimeout  {"timeout"};
+    inline constexpr QLatin1String kMode     {"mode"};
+    inline constexpr QLatin1String kSubType  {"subType"};
 
     // Serial
-    inline constexpr std::string_view kPort        = "port";
-    inline constexpr std::string_view kBaudRate    = "baudRate";
-    inline constexpr std::string_view kDataBits    = "dataBits";
-    inline constexpr std::string_view kParity      = "parity";
-    inline constexpr std::string_view kStopBits    = "stopBits";
-    inline constexpr std::string_view kFlowControl = "flowControl";
+    inline constexpr QLatin1String kPort        {"port"};
+    inline constexpr QLatin1String kBaudRate    {"baudRate"};
+    inline constexpr QLatin1String kDataBits    {"dataBits"};
+    inline constexpr QLatin1String kParity      {"parity"};
+    inline constexpr QLatin1String kStopBits    {"stopBits"};
+    inline constexpr QLatin1String kFlowControl {"flowControl"};
 
     // Network
-    inline constexpr std::string_view kHost        = "host";
-    inline constexpr std::string_view kLocalHost   = "localHost";
-    inline constexpr std::string_view kLocalPort   = "localPort";
-    inline constexpr std::string_view kRemoteHost  = "remoteHost";
-    inline constexpr std::string_view kRemotePort  = "remotePort";
+    inline constexpr QLatin1String kHost        {"host"};
+    inline constexpr QLatin1String kLocalHost   {"localHost"};
+    inline constexpr QLatin1String kLocalPort   {"localPort"};
+    inline constexpr QLatin1String kRemoteHost  {"remoteHost"};
+    inline constexpr QLatin1String kRemotePort  {"remotePort"};
 
     // Modbus
-    inline constexpr std::string_view kSlaveId  = "slaveId";
-    inline constexpr std::string_view kFunction = "function";
-    inline constexpr std::string_view kAddress  = "address";
-    inline constexpr std::string_view kQuantity = "quantity";
-    inline constexpr std::string_view kValues   = "values";
+    inline constexpr QLatin1String kSlaveId  {"slaveId"};
+    inline constexpr QLatin1String kFunction {"function"};
+    inline constexpr QLatin1String kAddress  {"address"};
+    inline constexpr QLatin1String kQuantity {"quantity"};
+    inline constexpr QLatin1String kValues   {"values"};
 } // namespace Config
 
 // ---------------------------------------------------------------------------
 // Modbus function-name tokens.
 // ---------------------------------------------------------------------------
 namespace Modbus {
-    inline constexpr std::string_view kReadCoils              = "readCoils";
-    inline constexpr std::string_view kReadDiscreteInputs     = "readDiscreteInputs";
-    inline constexpr std::string_view kReadHoldingRegisters   = "readHoldingRegisters";
-    inline constexpr std::string_view kReadInputRegisters     = "readInputRegisters";
-    inline constexpr std::string_view kWriteSingleCoil        = "writeSingleCoil";
-    inline constexpr std::string_view kWriteSingleRegister    = "writeSingleRegister";
-    inline constexpr std::string_view kWriteMultipleCoils     = "writeMultipleCoils";
-    inline constexpr std::string_view kWriteMultipleRegisters = "writeMultipleRegisters";
-    inline constexpr std::string_view kModeRtu = "RTU";
-    inline constexpr std::string_view kModeTcp = "TCP";
+    inline constexpr QLatin1String kReadCoils              {"readCoils"};
+    inline constexpr QLatin1String kReadDiscreteInputs     {"readDiscreteInputs"};
+    inline constexpr QLatin1String kReadHoldingRegisters   {"readHoldingRegisters"};
+    inline constexpr QLatin1String kReadInputRegisters     {"readInputRegisters"};
+    inline constexpr QLatin1String kWriteSingleCoil        {"writeSingleCoil"};
+    inline constexpr QLatin1String kWriteSingleRegister    {"writeSingleRegister"};
+    inline constexpr QLatin1String kWriteMultipleCoils     {"writeMultipleCoils"};
+    inline constexpr QLatin1String kWriteMultipleRegisters {"writeMultipleRegisters"};
+    inline constexpr QLatin1String kModeRtu {"RTU"};
+    inline constexpr QLatin1String kModeTcp {"TCP"};
 } // namespace Modbus
 
 // ---------------------------------------------------------------------------
 // Serial-port parameter tokens.
 // ---------------------------------------------------------------------------
 namespace Serial {
-    inline constexpr std::string_view kParityNone    = "None";
-    inline constexpr std::string_view kParityEven    = "Even";
-    inline constexpr std::string_view kParityOdd     = "Odd";
-    inline constexpr std::string_view kParitySpace   = "Space";
-    inline constexpr std::string_view kParityMark    = "Mark";
+    inline constexpr QLatin1String kParityNone    {"None"};
+    inline constexpr QLatin1String kParityEven    {"Even"};
+    inline constexpr QLatin1String kParityOdd     {"Odd"};
+    inline constexpr QLatin1String kParitySpace   {"Space"};
+    inline constexpr QLatin1String kParityMark    {"Mark"};
 
-    inline constexpr std::string_view kStopBits1     = "1";
-    inline constexpr std::string_view kStopBits1_5   = "1.5";
-    inline constexpr std::string_view kStopBits2     = "2";
+    inline constexpr QLatin1String kStopBits1     {"1"};
+    inline constexpr QLatin1String kStopBits1_5   {"1.5"};
+    inline constexpr QLatin1String kStopBits2     {"2"};
 
-    inline constexpr std::string_view kFlowNone      = "None";
-    inline constexpr std::string_view kFlowHardware  = "Hardware";
-    inline constexpr std::string_view kFlowSoftware  = "Software";
+    inline constexpr QLatin1String kFlowNone      {"None"};
+    inline constexpr QLatin1String kFlowHardware  {"Hardware"};
+    inline constexpr QLatin1String kFlowSoftware  {"Software"};
 } // namespace Serial
 
 // ---------------------------------------------------------------------------
@@ -109,15 +109,15 @@ namespace Serial {
 // ---------------------------------------------------------------------------
 namespace Can {
     /// Qt SerialBus backend name, e.g. "socketcan", "peakcan", "vectorcan".
-    inline constexpr std::string_view kPlugin    = "canPlugin";
+    inline constexpr QLatin1String kPlugin    {"canPlugin"};
     /// Device interface name, e.g. "can0", "PCAN_USBBUS1".
-    inline constexpr std::string_view kInterface = "canInterface";
+    inline constexpr QLatin1String kInterface {"canInterface"};
     /// Bit rate in bits/s, e.g. 500000 (500 kbps).
-    inline constexpr std::string_view kBitrate   = "canBitrate";
+    inline constexpr QLatin1String kBitrate   {"canBitrate"};
     /// Enable CAN-FD frames (bool).
-    inline constexpr std::string_view kFd        = "canFd";
+    inline constexpr QLatin1String kFd        {"canFd"};
     /// Enable loopback mode (bool, default false).
-    inline constexpr std::string_view kLoopback  = "canLoopback";
+    inline constexpr QLatin1String kLoopback  {"canLoopback"};
 } // namespace Can
 
 } // namespace TypeNames

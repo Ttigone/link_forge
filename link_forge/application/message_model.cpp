@@ -23,6 +23,7 @@ int MessageModel::columnCount(const QModelIndex& parent) const
 
 QVariant MessageModel::data(const QModelIndex& index, int role) const
 {
+    if (!index.isValid()) {
         return {};
     }
     if (role != Qt::DisplayRole && role != Qt::EditRole) {

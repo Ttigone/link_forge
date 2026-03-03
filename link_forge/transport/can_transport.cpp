@@ -6,16 +6,12 @@
 #include <QCanBusFrame>
 #include <QDebug>
 #include <QDataStream>
+#include <QIODevice>
 
 namespace LinkForge {
 namespace Transport {
 
 using namespace Core;
-
-// Convenience: convert a std::string_view constant to QString for QVariantMap look-ups.
-static inline QString sv2q(std::string_view sv) {
-    return QString::fromUtf8(sv.data(), static_cast<int>(sv.size()));
-}
 
 CanTransport::CanTransport(QObject* parent)
     : ITransport(parent)
@@ -39,11 +35,11 @@ bool CanTransport::Connect(const QVariantMap& config)
 
     config_ = config;
 
-    const QString plugin    = config_.value(sv2q(TypeNames::Can::kPlugin),
+    const QString plugin    = config_.value(TypeNames::Can::kPlugin,
                                              QStringLiteral("socketcan")).toString();
-    const QString interface = config_.value(sv2q(TypeNames::Can::kInterface),
+    const QString interface = config_.value(TypeNames::Can::kInterface,
                                              QStringLiteral("can0")).toString();
-    can_fd_  = config_.value(sv2q(TypeNames::Can::kFd), false).toBool();
+    can_fd_  = config_.value(TypeNames::Can::kFd, false).toBool();
 
     SetState(State::Connecting);
 
@@ -95,11 +91,11 @@ void CanTransport::Disconnect()
     emit Disconnected();
 }
 
-bool CanTransport::Send(const QByteArray& data)
+qint64 CanTransport::Send(const QByteArray& data)
 {
     if (state_.load() != State::Connected || !device_) {
         emit ErrorOccurred(QStringLiteral("CanTransport: not connected"));
-        return false;
+        return -1;
     }
 
     const QCanBusFrame frame = DeserialiseFrame(data);
@@ -107,16 +103,16 @@ bool CanTransport::Send(const QByteArray& data)
         const QString err = QStringLiteral("CanTransport: invalid frame bytes");
         emit ErrorOccurred(err);
         qWarning() << err;
-        return false;
+        return -1;
     }
 
     if (!device_->writeFrame(frame)) {
         const QString err = device_->errorString();
         emit ErrorOccurred(err);
         qWarning() << "CanTransport: writeFrame failed:" << err;
-        return false;
+        return -1;
     }
-    return true;
+    return data.size();
 }
 
 // ────────────────────────────────────────────────────────────────────────────
@@ -259,13 +255,13 @@ bool CanTransport::ConfigureDevice()
 {
     if (!device_) return false;
 
-    const quint32 bitrate = config_.value(sv2q(TypeNames::Can::kBitrate), 500000u).toUInt();
+    const quint32 bitrate = config_.value(TypeNames::Can::kBitrate, 500000u).toUInt();
     if (bitrate > 0) {
         device_->setConfigurationParameter(QCanBusDevice::BitRateKey,
                                             QVariant(bitrate));
     }
 
-    const bool loopback = config_.value(sv2q(TypeNames::Can::kLoopback), false).toBool();
+    const bool loopback = config_.value(TypeNames::Can::kLoopback, false).toBool();
     device_->setConfigurationParameter(QCanBusDevice::LoopbackKey,
                                         QVariant(loopback));
 

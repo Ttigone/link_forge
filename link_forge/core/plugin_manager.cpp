@@ -30,6 +30,7 @@ PluginManager::~PluginManager()
 int PluginManager::LoadPluginsFromDir(const QString& dir_path)
 {
     QDir dir(dir_path);
+    if (!dir.exists()) {
         qWarning() << "PluginManager: directory does not exist:" << dir_path;
         return 0;
     }

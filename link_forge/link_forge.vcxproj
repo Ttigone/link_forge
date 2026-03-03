@@ -102,9 +102,12 @@
     <QtMoc Include="link_forge.h" />
     <QtMoc Include="application\main_controller.h" />
     <QtMoc Include="application\message_model.h" />
+    <QtMoc Include="core\iprotocol.h" />
+    <QtMoc Include="core\itransport.h" />
     <QtMoc Include="core\communication_manager.h" />
     <QtMoc Include="core\channel_manager.h" />
     <QtMoc Include="core\plugin_manager.h" />
+    <QtMoc Include="utils\ConfigManager.h" />
     <QtMoc Include="protocol\custom_protocol.h" />
     <QtMoc Include="protocol\frame_parser.h" />
     <QtMoc Include="protocol\frame_protocol.h" />

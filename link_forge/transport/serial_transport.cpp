@@ -36,11 +36,10 @@ bool SerialTransport::Connect(const QVariantMap& config)
 
     SetState(State::Connecting);
     config_ = config;
-
+    if (!ConfigurePort(config)) {
         SetState(State::Error);
         return false;
     }
-
     if (port_->open(QIODevice::ReadWrite)) {
         SetState(State::Connected);
         emit Connected();
@@ -74,6 +73,7 @@ void SerialTransport::Disconnect()
 
 qint64 SerialTransport::Send(const QByteArray& data)
 {
+    if (state_ != State::Connected) {
         qWarning() << "SerialTransport::Send: not connected";
         return -1;
     }
@@ -101,9 +101,11 @@ QStringList SerialTransport::AvailablePorts()
 
 void SerialTransport::OnReadyRead()
 {
+    if (!port_ || !port_->isOpen()) {
         return;
     }
     const QByteArray data = port_->readAll();
+    if (!data.isEmpty()) {
         read_buffer_.append(data);
         emit DataReceived(data);
     }
@@ -149,6 +151,7 @@ bool SerialTransport::ConfigurePort(const QVariantMap& config)
 
     // Baud rate
     const int baud_rate = config.value(QString(Config::kBaudRate), 9600).toInt();
+    if (!port_->setBaudRate(baud_rate)) {
         emit ErrorOccurred(QString("Invalid baud rate: %1").arg(baud_rate));
         return false;
     }

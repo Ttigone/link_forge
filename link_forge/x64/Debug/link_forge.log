@@ -2,694 +2,88 @@
    Qt: 6.8.3
   message_model.cpp
   plugin_manager.cpp
-  protocol_factory.cpp
-  transport_factory.cpp
-  custom_protocol.cpp
-  frame_protocol.cpp
-  modbus_protocol.cpp
-  can_transport.cpp
-  serial_transport.cpp
-  socket_transport.cpp
   ConfigManager.cpp
-  Logger.cpp
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\serial_transport.cpp(44,5): error C2059: 语法错误:“if”
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\serial_transport.cpp(44,44): error C2143: 语法错误: 缺少“;”(在“{”的前面)
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\serial_transport.cpp(44,44): error C2447: “{”: 缺少函数标题(是否是老式的形式表?)
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\serial_transport.cpp(52,30): error C2065: “port_”: 未声明的标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\serial_transport.cpp(52,49): error C2065: “port_”: 未声明的标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\serial_transport.cpp(53,10): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\serial_transport.cpp(53,23): error C2440: “初始化”: 无法从“const QString”转换为“int”
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\serial_transport.cpp(54,14): error C2653: “State”: 不是类或命名空间名称
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\serial_transport.cpp(54,5): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\serial_transport.cpp(54,21): error C2065: “Error”: 未声明的标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\serial_transport.cpp(55,5): error C2059: 语法错误:“return”
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\serial_transport.cpp(58,6): error C2653: “SerialTransport”: 不是类或命名空间名称
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\serial_transport.cpp(60,9): error C2065: “state_”: 未声明的标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\can_transport.h(44,14): error C2555: “LinkForge::Transport::CanTransport::Send”: 重写虚函数返回类型有差异，且不是来自“LinkForge::Core::ITransport::Send”的协变
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\serial_transport.cpp(60,19): error C2653: “State”: 不是类或命名空间名称
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\serial_transport.cpp(60,26): error C2065: “Disconnected”: 未声明的标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\serial_transport.cpp(63,14): error C2653: “State”: 不是类或命名空间名称
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\serial_transport.cpp(63,21): error C2065: “Disconnecting”: 未声明的标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\serial_transport.cpp(63,5): error C3861: “SetState”: 找不到标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\can_transport.h(47,14): error C3668: “LinkForge::Transport::CanTransport::GetName”: 包含重写说明符“override”的方法没有重写任何基类方法
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\serial_transport.cpp(65,9): error C2065: “port_”: 未声明的标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\serial_transport.cpp(65,18): error C2065: “port_”: 未声明的标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\serial_transport.cpp(66,9): error C2065: “port_”: 未声明的标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\serial_transport.cpp(69,5): error C2065: “read_buffer_”: 未声明的标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\serial_transport.cpp(70,14): error C2653: “State”: 不是类或命名空间名称
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\serial_transport.cpp(70,21): error C2065: “Disconnected”: 未声明的标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\serial_transport.cpp(70,5): error C3861: “SetState”: 找不到标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\serial_transport.cpp(71,10): error C3861: “Disconnected”: 找不到标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\serial_transport.cpp(75,8): error C2653: “SerialTransport”: 不是类或命名空间名称
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\socket_transport.cpp(42,46): error C2440: “<function-style-cast>”: 无法从“const std::string_view”转换为“QString”
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\serial_transport.cpp(80,28): error C2065: “port_”: 未声明的标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\serial_transport.cpp(80,41): error C2065: “data”: 未声明的标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\serial_transport.cpp(80,18): error C2737: “LinkForge::written”: 必须初始化 const 对象
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\socket_transport.cpp(44,29): error C2440: “<function-style-cast>”: 无法从“const std::string_view”转换为“QString”
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\serial_transport.cpp(81,5): error C2059: 语法错误:“if”
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\serial_transport.cpp(81,22): error C2143: 语法错误: 缺少“;”(在“{”的前面)
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\socket_transport.cpp(43,19): error C2737: “port”: 必须初始化 const 对象
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\serial_transport.cpp(81,22): error C2447: “{”: 缺少函数标题(是否是老式的形式表?)
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\serial_transport.cpp(85,5): error C3927: "->": 非函数声明符后不允许尾随返回类型
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\serial_transport.cpp(85,12): error C3613: “->”后缺少返回类型(假定为“int”)
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\serial_transport.cpp(85,5): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\serial_transport.cpp(85,12): error C2146: 语法错误: 缺少“;”(在标识符“flush”的前面)
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\serial_transport.cpp(86,5): error C2059: 语法错误:“return”
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\serial_transport.cpp(89,13): error C2653: “SerialTransport”: 不是类或命名空间名称
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\protocol\modbus_protocol.cpp(19,17): error C2440: “<function-style-cast>”: 无法从“const std::string_view”转换为“QString”
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\socket_transport.cpp(68,28): error C2065: “socket_”: 未声明的标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\socket_transport.cpp(68,43): error C2065: “data”: 未声明的标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\socket_transport.cpp(68,18): error C2737: “LinkForge::Transport::written”: 必须初始化 const 对象
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\socket_transport.cpp(69,5): error C2059: 语法错误:“if”
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\socket_transport.cpp(69,22): error C2143: 语法错误: 缺少“;”(在“{”的前面)
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\socket_transport.cpp(69,22): error C2447: “{”: 缺少函数标题(是否是老式的形式表?)
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\socket_transport.cpp(73,5): error C3927: "->": 非函数声明符后不允许尾随返回类型
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\socket_transport.cpp(73,14): error C3613: “->”后缺少返回类型(假定为“int”)
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\socket_transport.cpp(73,5): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\socket_transport.cpp(73,14): error C2146: 语法错误: 缺少“;”(在标识符“flush”的前面)
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\socket_transport.cpp(74,5): error C2059: 语法错误:“return”
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\socket_transport.cpp(77,6): error C2653: “TcpSocketTransport”: 不是类或命名空间名称
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\socket_transport.cpp(79,14): error C2653: “State”: 不是类或命名空间名称
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\socket_transport.cpp(79,21): error C2065: “Connected”: 未声明的标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\socket_transport.cpp(79,5): error C3861: “SetState”: 找不到标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\socket_transport.cpp(80,10): error C3861: “Connected”: 找不到标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\serial_transport.cpp(102,6): error C2653: “SerialTransport”: 不是类或命名空间名称
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\protocol\modbus_protocol.cpp(20,17): error C2440: “<function-style-cast>”: 无法从“const std::string_view”转换为“QString”
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\serial_transport.cpp(106,29): error C2065: “port_”: 未声明的标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\serial_transport.cpp(107,9): error C3927: "->": 非函数声明符后不允许尾随返回类型
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\serial_transport.cpp(107,21): error C3484: 语法错误: 返回类型前应为“->”
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\serial_transport.cpp(107,22): error C3613: “->”后缺少返回类型(假定为“int”)
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\serial_transport.cpp(107,9): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\serial_transport.cpp(107,22): error C2146: 语法错误: 缺少“;”(在标识符“append”的前面)
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\serial_transport.cpp(108,14): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\serial_transport.cpp(108,26): error C2440: “初始化”: 无法从“const QByteArray”转换为“int”
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\serial_transport.cpp(109,5): error C2059: 语法错误:“}”
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\serial_transport.cpp(109,5): error C2143: 语法错误: 缺少“;”(在“}”的前面)
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\serial_transport.cpp(110,1): error C2143: 语法错误: 缺少“;”(在“}”的前面)
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\serial_transport.cpp(110,1): error C2059: 语法错误:“}”
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\serial_transport.cpp(112,6): error C2653: “SerialTransport”: 不是类或命名空间名称
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\serial_transport.cpp(113,1): error C2143: 语法错误: 缺少“;”(在“{”的前面)
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\serial_transport.cpp(113,1): error C2447: “{”: 缺少函数标题(是否是老式的形式表?)
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\serial_transport.cpp(128,6): error C2653: “SerialTransport”: 不是类或命名空间名称
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\serial_transport.cpp(134,6): error C2653: “SerialTransport”: 不是类或命名空间名称
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\serial_transport.cpp(134,23): error C2182: “SetState”: “void” 这一使用无效
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\serial_transport.cpp(134,32): error C2065: “State”: 未声明的标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\serial_transport.cpp(134,38): error C2146: 语法错误: 缺少“)”(在标识符“new_state”的前面)
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\serial_transport.cpp(135,1): error C2143: 语法错误: 缺少“;”(在“{”的前面)
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\serial_transport.cpp(135,1): error C2447: “{”: 缺少函数标题(是否是老式的形式表?)
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\socket_transport.cpp(82,16): error C2065: “socket_”: 未声明的标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\serial_transport.cpp(142,6): error C2653: “SerialTransport”: 不是类或命名空间名称
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\socket_transport.cpp(82,60): error C2065: “socket_”: 未声明的标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\serial_transport.cpp(144,21): error C2653: “Core”: 不是类或命名空间名称
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\serial_transport.cpp(144,27): error C2871: “TypeNames”: 具有该名称的命名空间不存在
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\serial_transport.cpp(147,52): error C2653: “Config”: 不是类或命名空间名称
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\socket_transport.cpp(85,6): error C2653: “TcpSocketTransport”: 不是类或命名空间名称
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\serial_transport.cpp(147,60): error C2065: “kPort”: 未声明的标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\socket_transport.cpp(87,14): error C2653: “State”: 不是类或命名空间名称
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\serial_transport.cpp(148,5): error C2065: “port_”: 未声明的标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\socket_transport.cpp(87,21): error C2065: “Disconnected”: 未声明的标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\serial_transport.cpp(151,48): error C2653: “Config”: 不是类或命名空间名称
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\socket_transport.cpp(87,5): error C3861: “SetState”: 找不到标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\serial_transport.cpp(151,56): error C2065: “kBaudRate”: 未声明的标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\protocol\modbus_protocol.cpp(21,17): error C2440: “<function-style-cast>”: 无法从“const std::string_view”转换为“QString”
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\socket_transport.cpp(88,10): error C3861: “Disconnected”: 找不到标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\serial_transport.cpp(151,15): error C2737: “baud_rate”: 必须初始化 const 对象
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\serial_transport.cpp(152,14): error C3861: “ErrorOccurred”: 找不到标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\socket_transport.cpp(92,6): error C2653: “TcpSocketTransport”: 不是类或命名空间名称
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\socket_transport.cpp(96,29): error C2065: “socket_”: 未声明的标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\socket_transport.cpp(97,14): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\socket_transport.cpp(97,26): error C2440: “初始化”: 无法从“const QByteArray”转换为“int”
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\socket_transport.cpp(99,1): error C2059: 语法错误:“}”
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\socket_transport.cpp(99,1): error C2143: 语法错误: 缺少“;”(在“}”的前面)
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\socket_transport.cpp(101,6): error C2653: “TcpSocketTransport”: 不是类或命名空间名称
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\socket_transport.cpp(102,1): error C2143: 语法错误: 缺少“;”(在“{”的前面)
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\socket_transport.cpp(102,1): error C2447: “{”: 缺少函数标题(是否是老式的形式表?)
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\socket_transport.cpp(107,6): error C2653: “TcpSocketTransport”: 不是类或命名空间名称
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\protocol\modbus_protocol.cpp(22,17): error C2440: “<function-style-cast>”: 无法从“const std::string_view”转换为“QString”
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\socket_transport.cpp(107,26): error C2182: “SetState”: “void” 这一使用无效
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\socket_transport.cpp(107,35): error C2065: “State”: 未声明的标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\socket_transport.cpp(107,41): error C2146: 语法错误: 缺少“)”(在标识符“new_state”的前面)
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\socket_transport.cpp(108,1): error C2143: 语法错误: 缺少“;”(在“{”的前面)
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\socket_transport.cpp(108,1): error C2447: “{”: 缺少函数标题(是否是老式的形式表?)
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\socket_transport.cpp(119,1): error C2653: “UdpSocketTransport”: 不是类或命名空间名称
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\socket_transport.cpp(119,21): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\socket_transport.cpp(121,44): error C2355: “this”: 只能在非静态成员函数或非静态数据成员初始值设定项的内部引用
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\socket_transport.cpp(121,20): error C2672: “std::make_unique”: 未找到匹配的重载函数
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\socket_transport.cpp(122,1): error C2550: “UdpSocketTransport”: 构造函数初始值设定项列表只能在构造函数定义中使用
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\socket_transport.cpp(123,22): error C2065: “socket_”: 未声明的标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\socket_transport.cpp(124,22): error C2355: “this”: 只能在非静态成员函数或非静态数据成员初始值设定项的内部引用
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\protocol\modbus_protocol.cpp(23,17): error C2440: “<function-style-cast>”: 无法从“const std::string_view”转换为“QString”
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\socket_transport.cpp(124,29): error C2653: “UdpSocketTransport”: 不是类或命名空间名称
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\socket_transport.cpp(124,49): error C2065: “OnReadyRead”: 未声明的标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\socket_transport.cpp(125,22): error C2065: “socket_”: 未声明的标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\socket_transport.cpp(126,22): error C2355: “this”: 只能在非静态成员函数或非静态数据成员初始值设定项的内部引用
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\socket_transport.cpp(126,29): error C2653: “UdpSocketTransport”: 不是类或命名空间名称
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\socket_transport.cpp(126,49): error C2065: “OnErrorOccurred”: 未声明的标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\socket_transport.cpp(127,1): warning C4508: “UdpSocketTransport”: 函数应返回一个值；假定“void”返回类型
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\socket_transport.cpp(129,1): error C2653: “UdpSocketTransport”: 不是类或命名空间名称
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\socket_transport.cpp(129,22): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\socket_transport.cpp(131,9): error C2065: “socket_”: 未声明的标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\socket_transport.cpp(131,20): error C2065: “socket_”: 未声明的标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\socket_transport.cpp(132,9): error C2065: “socket_”: 未声明的标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\socket_transport.cpp(134,1): warning C4508: “{dtor}”: 函数应返回一个值；假定“void”返回类型
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\socket_transport.cpp(136,6): error C2653: “UdpSocketTransport”: 不是类或命名空间名称
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\socket_transport.cpp(138,9): error C2065: “state_”: 未声明的标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\socket_transport.cpp(138,19): error C2653: “State”: 不是类或命名空间名称
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\socket_transport.cpp(138,26): error C2065: “Connected”: 未声明的标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\protocol\modbus_protocol.cpp(24,17): error C2440: “<function-style-cast>”: 无法从“const std::string_view”转换为“QString”
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\socket_transport.cpp(142,5): error C2065: “config_”: 未声明的标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\socket_transport.cpp(144,53): error C2653: “Core”: 不是类或命名空间名称
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\socket_transport.cpp(144,78): error C2065: “kLocalHost”: 未声明的标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\socket_transport.cpp(146,30): error C2653: “Core”: 不是类或命名空间名称
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\socket_transport.cpp(146,55): error C2065: “kLocalPort”: 未声明的标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\socket_transport.cpp(145,19): error C2737: “local_port”: 必须初始化 const 对象
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\socket_transport.cpp(148,5): error C2065: “remote_host_”: 未声明的标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\socket_transport.cpp(148,54): error C2653: “Core”: 不是类或命名空间名称
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\socket_transport.cpp(148,79): error C2065: “kRemoteHost”: 未声明的标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\socket_transport.cpp(149,5): error C2065: “remote_port_”: 未声明的标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\socket_transport.cpp(150,30): error C2653: “Core”: 不是类或命名空间名称
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\socket_transport.cpp(150,55): error C2065: “kRemotePort”: 未声明的标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\socket_transport.cpp(152,14): error C2653: “State”: 不是类或命名空间名称
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\socket_transport.cpp(152,21): error C2065: “Connecting”: 未声明的标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\socket_transport.cpp(154,9): error C2065: “socket_”: 未声明的标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\socket_transport.cpp(155,18): error C2653: “State”: 不是类或命名空间名称
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\socket_transport.cpp(155,25): error C2065: “Connected”: 未声明的标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\socket_transport.cpp(156,14): error C3861: “Connected”: 找不到标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\protocol\modbus_protocol.cpp(25,17): error C2440: “<function-style-cast>”: 无法从“const std::string_view”转换为“QString”
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\protocol\modbus_protocol.cpp(26,17): error C2440: “<function-style-cast>”: 无法从“const std::string_view”转换为“QString”
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\serial_transport.cpp(161,31): error C2065: “config”: 未声明的标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\serial_transport.cpp(161,52): error C2653: “Config”: 不是类或命名空间名称
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\serial_transport.cpp(161,60): error C2065: “kDataBits”: 未声明的标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\serial_transport.cpp(161,15): error C2737: “data_bits_val”: 必须初始化 const 对象
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\serial_transport.cpp(163,5): error C2059: 语法错误:“if”
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\serial_transport.cpp(163,38): error C2143: 语法错误: 缺少“;”(在“{”的前面)
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\serial_transport.cpp(163,38): error C2447: “{”: 缺少函数标题(是否是老式的形式表?)
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\serial_transport.cpp(167,5): error C3927: "->": 非函数声明符后不允许尾随返回类型
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\serial_transport.cpp(167,12): error C3613: “->”后缺少返回类型(假定为“int”)
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\serial_transport.cpp(167,5): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\serial_transport.cpp(167,12): error C2146: 语法错误: 缺少“;”(在标识符“setDataBits”的前面)
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\socket_transport.cpp(161,60): error C2065: “socket_”: 未声明的标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\socket_transport.cpp(162,10): error C3861: “ErrorOccurred”: 找不到标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\socket_transport.cpp(163,14): error C2653: “State”: 不是类或命名空间名称
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\socket_transport.cpp(163,21): error C2065: “Error”: 未声明的标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\socket_transport.cpp(167,6): error C2653: “UdpSocketTransport”: 不是类或命名空间名称
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\socket_transport.cpp(169,9): error C2065: “state_”: 未声明的标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\socket_transport.cpp(169,19): error C2653: “State”: 不是类或命名空间名称
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\socket_transport.cpp(169,26): error C2065: “Disconnected”: 未声明的标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\socket_transport.cpp(172,14): error C2653: “State”: 不是类或命名空间名称
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\socket_transport.cpp(172,21): error C2065: “Disconnecting”: 未声明的标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\socket_transport.cpp(173,9): error C2065: “socket_”: 未声明的标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\socket_transport.cpp(173,20): error C2065: “socket_”: 未声明的标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\socket_transport.cpp(174,9): error C2065: “socket_”: 未声明的标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\socket_transport.cpp(176,14): error C2653: “State”: 不是类或命名空间名称
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\socket_transport.cpp(176,21): error C2065: “Disconnected”: 未声明的标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\socket_transport.cpp(177,10): error C3861: “Disconnected”: 找不到标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\protocol\custom_protocol.cpp(33,5): error C3927: "->": 非函数声明符后不允许尾随返回类型
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\protocol\custom_protocol.cpp(33,10): error C3484: 语法错误: 返回类型前应为“->”
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\protocol\custom_protocol.cpp(33,11): error C3613: “->”后缺少返回类型(假定为“int”)
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\protocol\custom_protocol.cpp(33,5): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\protocol\custom_protocol.cpp(33,5): error C2371: “LinkForge::Protocol::frame”: 重定义；不同的基类型
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\protocol\custom_protocol.cpp(33,11): error C2146: 语法错误: 缺少“;”(在标识符“append”的前面)
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\protocol\custom_protocol.cpp(33,36): error C2653: “Frame”: 不是类或命名空间名称
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\protocol\custom_protocol.cpp(34,5): error C3927: "->": 非函数声明符后不允许尾随返回类型
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\protocol\custom_protocol.cpp(34,10): error C3484: 语法错误: 返回类型前应为“->”
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\protocol\custom_protocol.cpp(34,11): error C3613: “->”后缺少返回类型(假定为“int”)
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\protocol\custom_protocol.cpp(34,5): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\protocol\custom_protocol.cpp(34,5): error C2371: “LinkForge::Protocol::frame”: 重定义；不同的基类型
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\protocol\custom_protocol.cpp(34,11): error C2146: 语法错误: 缺少“;”(在标识符“append”的前面)
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\protocol\custom_protocol.cpp(34,36): error C2653: “Frame”: 不是类或命名空间名称
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\protocol\custom_protocol.cpp(37,49): error C2065: “data”: 未声明的标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\protocol\custom_protocol.cpp(37,19): error C2737: “LinkForge::Protocol::length”: 必须初始化 const 对象
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\protocol\custom_protocol.cpp(38,5): error C3927: "->": 非函数声明符后不允许尾随返回类型
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\protocol\custom_protocol.cpp(38,10): error C3484: 语法错误: 返回类型前应为“->”
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\protocol\custom_protocol.cpp(38,11): error C3613: “->”后缺少返回类型(假定为“int”)
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\protocol\custom_protocol.cpp(38,5): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\protocol\custom_protocol.cpp(38,5): error C2371: “LinkForge::Protocol::frame”: 重定义；不同的基类型
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\protocol\custom_protocol.cpp(38,11): error C2146: 语法错误: 缺少“;”(在标识符“append”的前面)
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\protocol\custom_protocol.cpp(39,5): error C3927: "->": 非函数声明符后不允许尾随返回类型
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\protocol\custom_protocol.cpp(39,10): error C3484: 语法错误: 返回类型前应为“->”
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\protocol\custom_protocol.cpp(39,11): error C3613: “->”后缺少返回类型(假定为“int”)
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\protocol\custom_protocol.cpp(39,5): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\protocol\custom_protocol.cpp(39,5): error C2371: “LinkForge::Protocol::frame”: 重定义；不同的基类型
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\protocol\custom_protocol.cpp(39,11): error C2146: 语法错误: 缺少“;”(在标识符“append”的前面)
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\protocol\modbus_protocol.cpp(158,20): error C2137: 空字符常量
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\protocol\modbus_protocol.cpp(159,20): error C2137: 空字符常量
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\protocol\modbus_protocol.cpp(159,37): error C2137: 空字符常量
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\protocol\modbus_protocol.cpp(160,20): error C2137: 空字符常量
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\protocol\modbus_protocol.cpp(182,20): error C2137: 空字符常量
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\protocol\modbus_protocol.cpp(183,20): error C2137: 空字符常量
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\protocol\modbus_protocol.cpp(183,37): error C2137: 空字符常量
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\protocol\modbus_protocol.cpp(184,20): error C2137: 空字符常量
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\protocol\modbus_protocol.cpp(184,37): error C2137: 空字符常量
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\socket_transport.cpp(181,8): error C2653: “UdpSocketTransport”: 不是类或命名空间名称
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\socket_transport.cpp(186,28): error C2065: “socket_”: 未声明的标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\socket_transport.cpp(186,51): error C2065: “data”: 未声明的标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\socket_transport.cpp(186,57): error C2065: “remote_host_”: 未声明的标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\socket_transport.cpp(186,71): error C2065: “remote_port_”: 未声明的标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\socket_transport.cpp(186,18): error C2737: “written”: 必须初始化 const 对象
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\socket_transport.cpp(187,5): error C2059: 语法错误:“if”
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\serial_transport.cpp(171,18): error C2653: “Serial”: 不是类或命名空间名称
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\serial_transport.cpp(171,26): error C2065: “kParityNone”: 未声明的标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\socket_transport.cpp(187,5): error C1003: 错误计数超过 100；正在停止编译
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\serial_transport.cpp(172,18): error C2653: “Serial”: 不是类或命名空间名称
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\serial_transport.cpp(172,26): error C2065: “kParityEven”: 未声明的标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\serial_transport.cpp(173,18): error C2653: “Serial”: 不是类或命名空间名称
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\serial_transport.cpp(173,26): error C2065: “kParityOdd”: 未声明的标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\serial_transport.cpp(174,18): error C2653: “Serial”: 不是类或命名空间名称
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\serial_transport.cpp(174,26): error C2065: “kParitySpace”: 未声明的标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\serial_transport.cpp(175,18): error C2653: “Serial”: 不是类或命名空间名称
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\serial_transport.cpp(175,26): error C2065: “kParityMark”: 未声明的标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\serial_transport.cpp(177,32): error C2065: “config”: 未声明的标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\serial_transport.cpp(177,53): error C2653: “Config”: 不是类或命名空间名称
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\serial_transport.cpp(177,61): error C2065: “kParity”: 未声明的标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\serial_transport.cpp(178,54): error C2653: “Serial”: 不是类或命名空间名称
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\serial_transport.cpp(178,62): error C2065: “kParityNone”: 未声明的标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\serial_transport.cpp(180,5): error C2059: 语法错误:“if”
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\serial_transport.cpp(180,37): error C2143: 语法错误: 缺少“;”(在“{”的前面)
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\serial_transport.cpp(180,37): error C2447: “{”: 缺少函数标题(是否是老式的形式表?)
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\serial_transport.cpp(184,5): error C3927: "->": 非函数声明符后不允许尾随返回类型
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\serial_transport.cpp(184,12): error C3613: “->”后缺少返回类型(假定为“int”)
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\serial_transport.cpp(184,5): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\serial_transport.cpp(184,5): error C2086: “int port_”: 重定义
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\serial_transport.cpp(184,12): error C2146: 语法错误: 缺少“;”(在标识符“setParity”的前面)
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\protocol\custom_protocol.cpp(42,5): error C3927: "->": 非函数声明符后不允许尾随返回类型
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\protocol\custom_protocol.cpp(42,10): error C3484: 语法错误: 返回类型前应为“->”
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\protocol\custom_protocol.cpp(42,11): error C3613: “->”后缺少返回类型(假定为“int”)
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\protocol\custom_protocol.cpp(42,5): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\protocol\custom_protocol.cpp(42,5): error C2371: “LinkForge::Protocol::frame”: 重定义；不同的基类型
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\protocol\custom_protocol.cpp(42,11): error C2146: 语法错误: 缺少“;”(在标识符“append”的前面)
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\protocol\custom_protocol.cpp(45,25): error C3861: “CalculateChecksum”: 找不到标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\protocol\custom_protocol.cpp(46,5): error C3927: "->": 非函数声明符后不允许尾随返回类型
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\protocol\custom_protocol.cpp(46,10): error C3484: 语法错误: 返回类型前应为“->”
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\protocol\custom_protocol.cpp(46,11): error C3613: “->”后缺少返回类型(假定为“int”)
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\protocol\custom_protocol.cpp(46,5): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\protocol\custom_protocol.cpp(46,5): error C2371: “LinkForge::Protocol::frame”: 重定义；不同的基类型
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\protocol\custom_protocol.cpp(46,11): error C2146: 语法错误: 缺少“;”(在标识符“append”的前面)
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\protocol\custom_protocol.cpp(47,5): error C3927: "->": 非函数声明符后不允许尾随返回类型
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\protocol\custom_protocol.cpp(47,10): error C3484: 语法错误: 返回类型前应为“->”
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\protocol\custom_protocol.cpp(47,11): error C3613: “->”后缺少返回类型(假定为“int”)
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\protocol\custom_protocol.cpp(47,5): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\protocol\custom_protocol.cpp(47,5): error C2371: “LinkForge::Protocol::frame”: 重定义；不同的基类型
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\protocol\custom_protocol.cpp(47,11): error C2146: 语法错误: 缺少“;”(在标识符“append”的前面)
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\protocol\custom_protocol.cpp(49,5): error C2059: 语法错误:“return”
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\protocol\custom_protocol.cpp(52,39): error C2653: “CustomProtocol”: 不是类或命名空间名称
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\protocol\custom_protocol.cpp(54,26): error C2065: “mutex_”: 未声明的标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\protocol\custom_protocol.cpp(54,24): error C2641: 无法推导“QMutexLocker”的模板参数
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\protocol\custom_protocol.cpp(56,17): error C2065: “Message”: 未声明的标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\protocol\custom_protocol.cpp(56,10): error C2923: "std::vector": "Message" 不是参数 "_Ty" 的有效 模板 类型参数
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\protocol\custom_protocol.cpp(56,10): error C2976: “std::vector'”: 模板 参数太少
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\protocol\custom_protocol.cpp(56,26): error C2641: 无法推导“std::vector”的模板参数
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\protocol\custom_protocol.cpp(56,26): error C2783: “std::vector<_Ty,_Alloc> std::vector(void) noexcept(<expr>)”: 无法推导“_Ty”的 模板 参数
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\protocol\custom_protocol.cpp(56,26): error C2780: “std::vector<_Ty,_Alloc> std::vector(std::vector<_Ty,_Alloc>)”: 应输入 1 个参数，却提供了 0 个
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\protocol\custom_protocol.cpp(57,5): error C2065: “receive_buffer_”: 未声明的标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\protocol\custom_protocol.cpp(59,12): error C2065: “receive_buffer_”: 未声明的标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\protocol\custom_protocol.cpp(59,38): error C2653: “Frame”: 不是类或命名空间名称
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\protocol\custom_protocol.cpp(59,45): error C2065: “kMinSize”: 未声明的标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\protocol\custom_protocol.cpp(62,30): error C2065: “receive_buffer_”: 未声明的标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\protocol\custom_protocol.cpp(63,54): error C2065: “receive_buffer_”: 未声明的标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\protocol\custom_protocol.cpp(64,54): error C2065: “receive_buffer_”: 未声明的标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\protocol\custom_protocol.cpp(63,27): error C2737: “hdr”: 必须初始化 const 对象
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\protocol\custom_protocol.cpp(65,24): error C2653: “Frame”: 不是类或命名空间名称
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\protocol\custom_protocol.cpp(65,31): error C2065: “kHeader”: 未声明的标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\protocol\custom_protocol.cpp(72,13): error C2065: “receive_buffer_”: 未声明的标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\protocol\custom_protocol.cpp(76,13): error C2065: “receive_buffer_”: 未声明的标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\protocol\custom_protocol.cpp(79,13): error C2065: “receive_buffer_”: 未声明的标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\protocol\custom_protocol.cpp(79,38): error C2653: “Frame”: 不是类或命名空间名称
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\protocol\custom_protocol.cpp(79,45): error C2065: “kHeaderSize”: 未声明的标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\protocol\custom_protocol.cpp(79,59): error C2653: “Frame”: 不是类或命名空间名称
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\protocol\custom_protocol.cpp(79,66): error C2065: “kLengthSize”: 未声明的标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\protocol\custom_protocol.cpp(83,55): error C2065: “receive_buffer_”: 未声明的标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\protocol\custom_protocol.cpp(84,55): error C2065: “receive_buffer_”: 未声明的标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\protocol\custom_protocol.cpp(83,23): error C2737: “data_len”: 必须初始化 const 对象
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\protocol\custom_protocol.cpp(85,31): error C2653: “Frame”: 不是类或命名空间名称
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\protocol\custom_protocol.cpp(85,38): error C2065: “kHeaderSize”: 未声明的标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\protocol\custom_protocol.cpp(85,52): error C2653: “Frame”: 不是类或命名空间名称
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\protocol\custom_protocol.cpp(85,59): error C2065: “kLengthSize”: 未声明的标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\protocol\custom_protocol.cpp(86,42): error C2653: “Frame”: 不是类或命名空间名称
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\protocol\custom_protocol.cpp(86,49): error C2065: “kCrcSize”: 未声明的标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\protocol\custom_protocol.cpp(85,19): error C2737: “frame_len”: 必须初始化 const 对象
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\protocol\custom_protocol.cpp(88,13): error C2065: “receive_buffer_”: 未声明的标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\protocol\custom_protocol.cpp(92,34): error C2065: “receive_buffer_”: 未声明的标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\protocol\custom_protocol.cpp(93,9): error C2065: “Message”: 未声明的标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\protocol\custom_protocol.cpp(93,17): error C2146: 语法错误: 缺少“;”(在标识符“msg”的前面)
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\protocol\custom_protocol.cpp(93,17): error C2065: “msg”: 未声明的标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\protocol\custom_protocol.cpp(93,23): error C3861: “ParseFrame”: 找不到标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\protocol\custom_protocol.cpp(94,13): error C2065: “msg”: 未声明的标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\protocol\custom_protocol.cpp(95,32): error C2065: “msg”: 未声明的标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\protocol\custom_protocol.cpp(96,32): error C2065: “msg”: 未声明的标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\protocol\custom_protocol.cpp(96,18): error C3861: “MessageParsed”: 找不到标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\protocol\custom_protocol.cpp(98,9): error C2065: “receive_buffer_”: 未声明的标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\protocol\custom_protocol.cpp(101,5): error C2440: “return”: 无法从“std::vector”转换为“std::vector<LinkForge::Core::IProtocol::Message,std::allocator<LinkForge::Core::IProtocol::Message>>”
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\protocol\custom_protocol.cpp(104,6): error C2653: “CustomProtocol”: 不是类或命名空间名称
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\protocol\custom_protocol.cpp(104,22): error C2270: “ValidateMessage”: 非成员函数上不允许修饰符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\protocol\custom_protocol.cpp(106,23): error C2653: “Frame”: 不是类或命名空间名称
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\protocol\custom_protocol.cpp(106,30): error C2065: “kMinSize”: 未声明的标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\protocol\custom_protocol.cpp(110,16): error C2653: “Frame”: 不是类或命名空间名称
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\protocol\custom_protocol.cpp(110,23): error C2065: “kHeader”: 未声明的标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\protocol\custom_protocol.cpp(115,30): error C2653: “Frame”: 不是类或命名空间名称
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\protocol\custom_protocol.cpp(115,37): error C2065: “kHeaderSize”: 未声明的标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\protocol\custom_protocol.cpp(115,51): error C2653: “Frame”: 不是类或命名空间名称
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\protocol\custom_protocol.cpp(115,58): error C2065: “kLengthSize”: 未声明的标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\protocol\custom_protocol.cpp(115,58): error C1003: 错误计数超过 100；正在停止编译
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\serial_transport.cpp(188,18): error C2653: “Serial”: 不是类或命名空间名称
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\serial_transport.cpp(188,18): error C1003: 错误计数超过 100；正在停止编译
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\can_transport.cpp(161,37): error C2027: 使用了未定义类型“QIODevice”
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\can_transport.cpp(161,37): error C2065: “WriteOnly”: 未声明的标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\core\protocol_factory.cpp(19,17): error C2440: “<function-style-cast>”: 无法从“const std::string_view”转换为“QString”
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\core\protocol_factory.cpp(20,17): error C2440: “<function-style-cast>”: 无法从“const std::string_view”转换为“QString”
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\core\protocol_factory.cpp(21,17): error C2440: “<function-style-cast>”: 无法从“const std::string_view”转换为“QString”
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\core\protocol_factory.cpp(22,17): error C2440: “<function-style-cast>”: 无法从“const std::string_view”转换为“QString”
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\core\protocol_factory.cpp(23,17): error C2440: “<function-style-cast>”: 无法从“const std::string_view”转换为“QString”
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\core\protocol_factory.cpp(24,17): error C2440: “<function-style-cast>”: 无法从“const std::string_view”转换为“QString”
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\core\protocol_factory.cpp(32,43): error C2440: “<function-style-cast>”: 无法从“const std::string_view”转换为“QString”
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\core\protocol_factory.cpp(33,43): error C2440: “<function-style-cast>”: 无法从“const std::string_view”转换为“QString”
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\core\protocol_factory.cpp(34,43): error C2440: “<function-style-cast>”: 无法从“const std::string_view”转换为“QString”
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\core\protocol_factory.cpp(35,43): error C2440: “<function-style-cast>”: 无法从“const std::string_view”转换为“QString”
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\core\protocol_factory.cpp(36,43): error C2440: “<function-style-cast>”: 无法从“const std::string_view”转换为“QString”
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\core\protocol_factory.cpp(37,43): error C2440: “<function-style-cast>”: 无法从“const std::string_view”转换为“QString”
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\core\protocol_factory.cpp(70,54): error C2440: “<function-style-cast>”: 无法从“const std::string_view”转换为“QString”
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\core\protocol_factory.cpp(71,54): error C2440: “<function-style-cast>”: 无法从“const std::string_view”转换为“QString”
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\core\protocol_factory.cpp(79,49): error C2440: “<function-style-cast>”: 无法从“const std::string_view”转换为“QString”
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\core\protocol_factory.cpp(80,49): error C2440: “<function-style-cast>”: 无法从“const std::string_view”转换为“QString”
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\protocol\frame_protocol.cpp(152,10): error C2664: “void LinkForge::Core::IProtocol::StatusUpdated(const QVariantMap &)”: 无法将参数 1 从“QString”转换为“const QVariantMap &”
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\core\protocol_factory.cpp(168,52): error C2440: “<function-style-cast>”: 无法从“const std::string_view”转换为“QString”
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\can_transport.h(44,14): error C2555: “LinkForge::Transport::CanTransport::Send”: 重写虚函数返回类型有差异，且不是来自“LinkForge::Core::ITransport::Send”的协变
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\transport\can_transport.h(47,14): error C3668: “LinkForge::Transport::CanTransport::GetName”: 包含重写说明符“override”的方法没有重写任何基类方法
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\core\transport_factory.cpp(19,17): error C2440: “<function-style-cast>”: 无法从“const std::string_view”转换为“QString”
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\core\transport_factory.cpp(20,17): error C2440: “<function-style-cast>”: 无法从“const std::string_view”转换为“QString”
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\core\transport_factory.cpp(21,17): error C2440: “<function-style-cast>”: 无法从“const std::string_view”转换为“QString”
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\core\transport_factory.cpp(22,17): error C2440: “<function-style-cast>”: 无法从“const std::string_view”转换为“QString”
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\core\transport_factory.cpp(23,17): error C2440: “<function-style-cast>”: 无法从“const std::string_view”转换为“QString”
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\core\transport_factory.cpp(24,17): error C2440: “<function-style-cast>”: 无法从“const std::string_view”转换为“QString”
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\core\transport_factory.cpp(25,17): error C2440: “<function-style-cast>”: 无法从“const std::string_view”转换为“QString”
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\core\transport_factory.cpp(33,46): error C2440: “<function-style-cast>”: 无法从“const std::string_view”转换为“QString”
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\core\transport_factory.cpp(34,46): error C2440: “<function-style-cast>”: 无法从“const std::string_view”转换为“QString”
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\core\transport_factory.cpp(35,46): error C2440: “<function-style-cast>”: 无法从“const std::string_view”转换为“QString”
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\core\transport_factory.cpp(36,46): error C2440: “<function-style-cast>”: 无法从“const std::string_view”转换为“QString”
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\core\transport_factory.cpp(37,46): error C2440: “<function-style-cast>”: 无法从“const std::string_view”转换为“QString”
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\core\transport_factory.cpp(152,52): error C2440: “<function-style-cast>”: 无法从“const std::string_view”转换为“QString”
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\utils\ConfigManager.cpp(79,55): error C2065: “file”: 未声明的标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\utils\ConfigManager.cpp(81,5): error C2059: 语法错误:“if”
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\utils\ConfigManager.cpp(81,56): error C2143: 语法错误: 缺少“;”(在“{”的前面)
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\utils\ConfigManager.cpp(81,56): error C2447: “{”: 缺少函数标题(是否是老式的形式表?)
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\utils\ConfigManager.cpp(86,9): error C2059: 语法错误:“return”
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\utils\ConfigManager.cpp(89,5): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\utils\ConfigManager.cpp(89,26): error C2065: “doc”: 未声明的标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\utils\ConfigManager.cpp(90,5): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\utils\ConfigManager.cpp(90,26): error C2065: “path”: 未声明的标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\utils\ConfigManager.cpp(91,5): error C2059: 语法错误:“static_cast”
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\utils\ConfigManager.cpp(92,5): error C2059: 语法错误:“return”
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\utils\ConfigManager.cpp(95,6): error C2653: “ConfigManager”: 不是类或命名空间名称
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\utils\ConfigManager.cpp(98,29): error C2065: “current_file_path_”: 未声明的标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\utils\ConfigManager.cpp(98,60): error C3861: “DefaultConfigPath”: 找不到标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\utils\ConfigManager.cpp(98,82): error C2065: “current_file_path_”: 未声明的标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\utils\ConfigManager.cpp(106,16): error C2065: “path”: 未声明的标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\utils\ConfigManager.cpp(107,9): error C2059: 语法错误:“static_cast”
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\utils\ConfigManager.cpp(108,9): error C2059: 语法错误:“return”
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\utils\ConfigManager.cpp(109,5): error C2059: 语法错误:“}”
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\utils\ConfigManager.cpp(109,5): error C2143: 语法错误: 缺少“;”(在“}”的前面)
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\utils\ConfigManager.cpp(112,5): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\utils\ConfigManager.cpp(112,26): error C2065: “path”: 未声明的标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\utils\ConfigManager.cpp(113,5): error C2059: 语法错误:“static_cast”
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\utils\ConfigManager.cpp(114,5): error C2059: 语法错误:“return”
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\utils\ConfigManager.cpp(115,1): error C2059: 语法错误:“}”
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\utils\ConfigManager.cpp(115,1): error C2143: 语法错误: 缺少“;”(在“}”的前面)
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\utils\ConfigManager.cpp(117,10): error C2653: “ConfigManager”: 不是类或命名空间名称
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\utils\ConfigManager.cpp(118,1): error C2143: 语法错误: 缺少“;”(在“{”的前面)
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\utils\ConfigManager.cpp(118,1): error C2447: “{”: 缺少函数标题(是否是老式的形式表?)
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\utils\ConfigManager.cpp(122,6): error C2653: “ConfigManager”: 不是类或命名空间名称
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\utils\ConfigManager.cpp(124,5): error C2065: “config_”: 未声明的标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\utils\ConfigManager.cpp(125,10): error C3861: “ConfigChanged”: 找不到标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\utils\ConfigManager.cpp(128,13): error C2653: “ConfigManager”: 不是类或命名空间名称
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\utils\ConfigManager.cpp(128,28): error C2270: “GetTransportConfig”: 非成员函数上不允许修饰符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\utils\ConfigManager.cpp(130,12): error C2065: “config_”: 未声明的标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\utils\ConfigManager.cpp(133,6): error C2653: “ConfigManager”: 不是类或命名空间名称
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\utils\ConfigManager.cpp(136,5): error C2065: “config_”: 未声明的标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\utils\ConfigManager.cpp(137,10): error C3861: “ConfigChanged”: 找不到标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\utils\ConfigManager.cpp(140,13): error C2653: “ConfigManager”: 不是类或命名空间名称
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\utils\ConfigManager.cpp(140,28): error C2270: “GetProtocolConfig”: 非成员函数上不允许修饰符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\utils\ConfigManager.cpp(142,12): error C2065: “config_”: 未声明的标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\utils\ConfigManager.cpp(145,6): error C2653: “ConfigManager”: 不是类或命名空间名称
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\utils\ConfigManager.cpp(148,5): error C2065: “config_”: 未声明的标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\utils\ConfigManager.cpp(149,10): error C3861: “ConfigChanged”: 找不到标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\utils\ConfigManager.cpp(152,6): error C2653: “ConfigManager”: 不是类或命名空间名称
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\utils\ConfigManager.cpp(154,5): error C2065: “config_”: 未声明的标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\utils\ConfigManager.cpp(155,5): error C3861: “InitDefaults”: 找不到标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\utils\ConfigManager.cpp(159,9): error C2653: “ConfigManager”: 不是类或命名空间名称
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\utils\ConfigManager.cpp(159,24): error C2270: “DefaultConfigPath”: 非成员函数上不允许修饰符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\utils\ConfigManager.cpp(166,1): error C2059: 语法错误:“}”
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\utils\ConfigManager.cpp(166,1): error C2143: 语法错误: 缺少“;”(在“}”的前面)
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\utils\ConfigManager.cpp(167,1): error C2143: 语法错误: 缺少“;”(在“}”的前面)
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\utils\ConfigManager.cpp(167,1): error C2059: 语法错误:“}”
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\core\plugin_manager.cpp(47,24): error C2065: “dir”: 未声明的标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\core\plugin_manager.cpp(47,16): error C2737: “LinkForge::Core::files”: 必须初始化 const 对象
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\core\plugin_manager.cpp(48,5): error C2059: 语法错误:“for”
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\core\plugin_manager.cpp(48,35): error C2059: 语法错误:“)”
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\core\plugin_manager.cpp(48,30): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\core\plugin_manager.cpp(48,30): error C2373: “LinkForge::Core::files”: 重定义；不同的类型修饰符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\core\plugin_manager.cpp(49,9): error C2059: 语法错误:“if”
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\core\plugin_manager.cpp(49,51): error C2143: 语法错误: 缺少“;”(在“{”的前面)
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\core\plugin_manager.cpp(49,51): error C2447: “{”: 缺少函数标题(是否是老式的形式表?)
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\core\plugin_manager.cpp(54,5): error C2059: 语法错误:“static_cast”
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\core\plugin_manager.cpp(55,5): error C2059: 语法错误:“return”
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\core\plugin_manager.cpp(58,6): error C2653: “PluginManager”: 不是类或命名空间名称
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\core\plugin_manager.cpp(60,24): error C2065: “mutex_”: 未声明的标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\core\plugin_manager.cpp(60,22): error C2641: 无法推导“QMutexLocker”的模板参数
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\core\plugin_manager.cpp(63,26): error C2065: “entries_”: 未声明的标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\core\plugin_manager.cpp(63,22): error C2530: “e”: 必须初始化引用
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\core\plugin_manager.cpp(63,22): error C3531: “e”: 类型包含“auto”的符号必须具有初始值设定项
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\core\plugin_manager.cpp(63,24): error C2143: 语法错误: 缺少“;”(在“:”的前面)
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\core\plugin_manager.cpp(63,34): error C2143: 语法错误: 缺少“;”(在“)”的前面)
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\core\plugin_manager.cpp(70,5): error C2065: “Entry”: 未声明的标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\core\plugin_manager.cpp(70,11): error C2146: 语法错误: 缺少“;”(在标识符“entry”的前面)
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\core\plugin_manager.cpp(70,11): error C2065: “entry”: 未声明的标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\core\plugin_manager.cpp(71,5): error C2065: “entry”: 未声明的标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\core\plugin_manager.cpp(73,25): error C2065: “entry”: 未声明的标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\core\plugin_manager.cpp(75,29): error C2065: “entry”: 未声明的标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\core\plugin_manager.cpp(76,14): error C3861: “PluginLoadError”: 找不到标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\application\message_model.cpp(28,5): error C2059: 语法错误:“if”
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\application\message_model.cpp(28,58): error C2143: 语法错误: 缺少“;”(在“{”的前面)
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\application\message_model.cpp(28,58): error C2447: “{”: 缺少函数标题(是否是老式的形式表?)
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\application\message_model.cpp(32,5): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\application\message_model.cpp(32,24): error C2143: 语法错误: 缺少“;”(在“&”的前面)
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\application\message_model.cpp(32,26): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\application\message_model.cpp(32,32): error C2065: “messages_”: 未声明的标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\application\message_model.cpp(32,42): error C2065: “index”: 未声明的标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\application\message_model.cpp(32,30): error C2530: “LinkForge::Application::rec”: 必须初始化引用
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\application\message_model.cpp(33,5): error C2059: 语法错误:“switch”
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\application\message_model.cpp(33,29): error C2143: 语法错误: 缺少“;”(在“{”的前面)
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\application\message_model.cpp(33,29): error C2447: “{”: 缺少函数标题(是否是老式的形式表?)
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\application\message_model.cpp(47,10): error C2653: “MessageModel”: 不是类或命名空间名称
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\application\message_model.cpp(47,24): error C2270: “headerData”: 非成员函数上不允许修饰符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\application\message_model.cpp(53,14): error C2065: “Timestamp”: 未声明的标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\application\message_model.cpp(53,14): error C2131: 表达式的计算结果不是常数
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\application\message_model.cpp(53,33): error C3861: “tr”: 找不到标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\application\message_model.cpp(54,14): error C2065: “Direction”: 未声明的标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\application\message_model.cpp(54,14): error C2131: 表达式的计算结果不是常数
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\application\message_model.cpp(54,33): error C3861: “tr”: 找不到标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\application\message_model.cpp(55,14): error C2065: “Type”: 未声明的标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\application\message_model.cpp(55,14): error C2131: 表达式的计算结果不是常数
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\application\message_model.cpp(55,33): error C3861: “tr”: 找不到标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\application\message_model.cpp(56,14): error C2065: “Data”: 未声明的标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\application\message_model.cpp(56,14): error C2131: 表达式的计算结果不是常数
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\application\message_model.cpp(56,33): error C3861: “tr”: 找不到标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\application\message_model.cpp(53,14): error C2051: case 表达式不是常量
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\application\message_model.cpp(54,14): error C2051: case 表达式不是常量
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\application\message_model.cpp(55,14): error C2051: case 表达式不是常量
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\application\message_model.cpp(56,14): error C2051: case 表达式不是常量
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\application\message_model.cpp(58,5): warning C4065: switch 语句包含“default”但是未包含“case”标签
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\application\message_model.cpp(61,6): error C2653: “MessageModel”: 不是类或命名空间名称
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\application\message_model.cpp(63,5): error C2065: “MessageRecord”: 未声明的标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\application\message_model.cpp(63,19): error C2146: 语法错误: 缺少“;”(在标识符“rec”的前面)
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\application\message_model.cpp(63,19): error C2065: “rec”: 未声明的标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\application\message_model.cpp(64,5): error C2065: “rec”: 未声明的标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\application\message_model.cpp(65,5): error C2065: “rec”: 未声明的标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\core\plugin_manager.cpp(84,33): error C2065: “ITransportPlugin”: 未声明的标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\application\message_model.cpp(66,5): error C2065: “rec”: 未声明的标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\core\plugin_manager.cpp(84,50): error C2059: 语法错误:“>”
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\core\plugin_manager.cpp(84,20): error C2062: 意外的类型“unknown-type” 
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\application\message_model.cpp(67,5): error C2065: “rec”: 未声明的标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\core\plugin_manager.cpp(84,63): error C2143: 语法错误: 缺少“;”(在“{”的前面)
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\application\message_model.cpp(68,5): error C2065: “rec”: 未声明的标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\core\plugin_manager.cpp(85,29): error C2530: “type_name”: 必须初始化引用
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\core\plugin_manager.cpp(85,39): error C2143: 语法错误: 缺少“;”(在“:”的前面)
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\core\plugin_manager.cpp(85,61): error C2143: 语法错误: 缺少“;”(在“)”的前面)
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\application\message_model.cpp(70,38): error C2065: “messages_”: 未声明的标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\application\message_model.cpp(70,15): error C2737: “row”: 必须初始化 const 对象
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\application\message_model.cpp(71,5): error C3861: “beginInsertRows”: 找不到标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\application\message_model.cpp(72,5): error C2065: “messages_”: 未声明的标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\application\message_model.cpp(72,35): error C2065: “rec”: 未声明的标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\application\message_model.cpp(73,26): error C2065: “messages_”: 未声明的标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\application\message_model.cpp(73,46): error C2065: “max_messages_”: 未声明的标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\application\message_model.cpp(74,9): error C2065: “messages_”: 未声明的标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\application\message_model.cpp(76,5): error C3861: “endInsertRows”: 找不到标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\core\plugin_manager.cpp(87,13): error C2653: “TransportFactory”: 不是类或命名空间名称
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\application\message_model.cpp(79,6): error C2653: “MessageModel”: 不是类或命名空间名称
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\application\message_model.cpp(81,5): error C2065: “MessageRecord”: 未声明的标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\application\message_model.cpp(81,19): error C2146: 语法错误: 缺少“;”(在标识符“rec”的前面)
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\application\message_model.cpp(81,19): error C2065: “rec”: 未声明的标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\application\message_model.cpp(82,5): error C2065: “rec”: 未声明的标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\core\plugin_manager.cpp(88,53): error C2653: “ITransport”: 不是类或命名空间名称
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\application\message_model.cpp(83,5): error C2065: “rec”: 未声明的标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\core\plugin_manager.cpp(88,65): error C3613: “->”后缺少返回类型(假定为“int”)
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\core\plugin_manager.cpp(88,65): error C3646: “Ptr”: 未知重写说明符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\application\message_model.cpp(84,5): error C2065: “rec”: 未声明的标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\core\plugin_manager.cpp(87,31): error C3861: “RegisterTransport”: 找不到标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\core\plugin_manager.cpp(91,13): error C2065: “entry”: 未声明的标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\core\plugin_manager.cpp(92,13): error C2065: “registered_transport_types_”: 未声明的标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\core\plugin_manager.cpp(93,18): error C3861: “TransportPluginLoaded”: 找不到标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\application\message_model.cpp(85,5): error C2065: “rec”: 未声明的标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\application\message_model.cpp(86,5): error C2065: “rec”: 未声明的标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\application\message_model.cpp(88,38): error C2065: “messages_”: 未声明的标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\application\message_model.cpp(88,15): error C2737: “row”: 必须初始化 const 对象
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\application\message_model.cpp(89,5): error C3861: “beginInsertRows”: 找不到标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\application\message_model.cpp(90,5): error C2065: “messages_”: 未声明的标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\application\message_model.cpp(90,35): error C2065: “rec”: 未声明的标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\application\message_model.cpp(91,26): error C2065: “messages_”: 未声明的标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\application\message_model.cpp(91,46): error C2065: “max_messages_”: 未声明的标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\application\message_model.cpp(92,9): error C2065: “messages_”: 未声明的标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\application\message_model.cpp(94,5): error C3861: “endInsertRows”: 找不到标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\application\message_model.cpp(97,6): error C2653: “MessageModel”: 不是类或命名空间名称
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\application\message_model.cpp(99,5): error C3861: “beginResetModel”: 找不到标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\application\message_model.cpp(100,5): error C2065: “messages_”: 未声明的标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\application\message_model.cpp(101,5): error C3861: “endResetModel”: 找不到标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\application\message_model.cpp(105,1): error C2059: 语法错误:“}”
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\application\message_model.cpp(105,1): error C2143: 语法错误: 缺少“;”(在“}”的前面)
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\core\plugin_manager.cpp(101,33): error C2065: “IProtocolPlugin”: 未声明的标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\core\plugin_manager.cpp(101,49): error C2059: 语法错误:“>”
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\core\plugin_manager.cpp(101,20): error C2062: 意外的类型“unknown-type” 
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\core\plugin_manager.cpp(101,62): error C2143: 语法错误: 缺少“;”(在“{”的前面)
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\core\plugin_manager.cpp(102,29): error C2530: “type_name”: 必须初始化引用
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\core\plugin_manager.cpp(102,39): error C2143: 语法错误: 缺少“;”(在“:”的前面)
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\core\plugin_manager.cpp(102,61): error C2143: 语法错误: 缺少“;”(在“)”的前面)
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\core\plugin_manager.cpp(103,13): error C2653: “ProtocolFactory”: 不是类或命名空间名称
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\core\plugin_manager.cpp(104,80): error C2653: “IProtocol”: 不是类或命名空间名称
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\core\plugin_manager.cpp(104,91): error C3613: “->”后缺少返回类型(假定为“int”)
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\core\plugin_manager.cpp(104,91): error C3646: “Ptr”: 未知重写说明符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\core\plugin_manager.cpp(103,30): error C3861: “RegisterProtocol”: 找不到标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\core\plugin_manager.cpp(107,13): error C2065: “entry”: 未声明的标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\core\plugin_manager.cpp(108,13): error C2065: “registered_protocol_types_”: 未声明的标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\core\plugin_manager.cpp(109,18): error C3861: “ProtocolPluginLoaded”: 找不到标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\core\plugin_manager.cpp(118,14): error C3861: “PluginLoadError”: 找不到标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\core\plugin_manager.cpp(120,9): error C2065: “entry”: 未声明的标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\core\plugin_manager.cpp(124,5): error C2065: “entries_”: 未声明的标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\core\plugin_manager.cpp(124,34): error C2065: “entry”: 未声明的标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\core\plugin_manager.cpp(128,6): error C2653: “PluginManager”: 不是类或命名空间名称
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\core\plugin_manager.cpp(130,24): error C2065: “mutex_”: 未声明的标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\core\plugin_manager.cpp(130,22): error C2641: 无法推导“QMutexLocker”的模板参数
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\core\plugin_manager.cpp(132,20): error C2065: “entries_”: 未声明的标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\core\plugin_manager.cpp(132,16): error C2530: “e”: 必须初始化引用
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\core\plugin_manager.cpp(132,16): error C3531: “e”: 类型包含“auto”的符号必须具有初始值设定项
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\core\plugin_manager.cpp(132,18): error C2143: 语法错误: 缺少“;”(在“:”的前面)
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\core\plugin_manager.cpp(132,28): error C2143: 语法错误: 缺少“;”(在“)”的前面)
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\core\plugin_manager.cpp(138,5): error C2065: “entries_”: 未声明的标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\core\plugin_manager.cpp(139,5): error C2065: “registered_transport_types_”: 未声明的标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\core\plugin_manager.cpp(140,5): error C2065: “registered_protocol_types_”: 未声明的标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\core\plugin_manager.cpp(143,13): error C2653: “PluginManager”: 不是类或命名空间名称
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\core\plugin_manager.cpp(143,28): error C2270: “LoadedPluginFiles”: 非成员函数上不允许修饰符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\core\plugin_manager.cpp(145,24): error C2065: “mutex_”: 未声明的标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\core\plugin_manager.cpp(145,22): error C2641: 无法推导“QMutexLocker”的模板参数
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\core\plugin_manager.cpp(147,26): error C2065: “entries_”: 未声明的标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\core\plugin_manager.cpp(147,22): error C2530: “e”: 必须初始化引用
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\core\plugin_manager.cpp(147,22): error C3531: “e”: 类型包含“auto”的符号必须具有初始值设定项
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\core\plugin_manager.cpp(147,24): error C2143: 语法错误: 缺少“;”(在“:”的前面)
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\core\plugin_manager.cpp(147,34): error C2143: 语法错误: 缺少“;”(在“)”的前面)
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\core\plugin_manager.cpp(153,13): error C2653: “PluginManager”: 不是类或命名空间名称
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\core\plugin_manager.cpp(153,28): error C2270: “RegisteredTransportTypes”: 非成员函数上不允许修饰符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\core\plugin_manager.cpp(155,24): error C2065: “mutex_”: 未声明的标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\core\plugin_manager.cpp(155,22): error C2641: 无法推导“QMutexLocker”的模板参数
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\core\plugin_manager.cpp(156,12): error C2065: “registered_transport_types_”: 未声明的标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\core\plugin_manager.cpp(159,13): error C2653: “PluginManager”: 不是类或命名空间名称
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\core\plugin_manager.cpp(159,28): error C2270: “RegisteredProtocolTypes”: 非成员函数上不允许修饰符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\core\plugin_manager.cpp(161,24): error C2065: “mutex_”: 未声明的标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\core\plugin_manager.cpp(161,22): error C2641: 无法推导“QMutexLocker”的模板参数
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\core\plugin_manager.cpp(162,12): error C2065: “registered_protocol_types_”: 未声明的标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\core\plugin_manager.cpp(165,1): error C2059: 语法错误:“}”
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\core\plugin_manager.cpp(165,1): error C2143: 语法错误: 缺少“;”(在“}”的前面)
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\core\plugin_manager.cpp(166,1): error C2143: 语法错误: 缺少“;”(在“}”的前面)
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\core\plugin_manager.cpp(166,1): error C2059: 语法错误:“}”
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\utils\Logger.cpp(36,5): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\utils\Logger.cpp(36,41): error C2065: “file_path”: 未声明的标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\utils\Logger.cpp(37,9): error C2059: 语法错误:“static_cast”
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\utils\Logger.cpp(38,9): error C3927: "->": 非函数声明符后不允许尾随返回类型
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\utils\Logger.cpp(38,18): error C3484: 语法错误: 返回类型前应为“->”
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\utils\Logger.cpp(38,19): error C3613: “->”后缺少返回类型(假定为“int”)
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\utils\Logger.cpp(38,9): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\utils\Logger.cpp(38,9): error C2086: “int LinkForge::Utils::log_file_”: 重定义
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\utils\Logger.cpp(38,19): error C2146: 语法错误: 缺少“;”(在标识符“reset”的前面)
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\utils\Logger.cpp(39,9): error C2059: 语法错误:“return”
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\utils\Logger.cpp(42,5): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\utils\Logger.cpp(42,49): error C2065: “log_file_”: 未声明的标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\utils\Logger.cpp(42,24): error C2672: “std::make_unique”: 未找到匹配的重载函数
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\utils\Logger.cpp(43,9): error C2653: “Level”: 不是类或命名空间名称
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\utils\Logger.cpp(43,5): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\utils\Logger.cpp(43,16): error C2065: “Info”: 未声明的标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\utils\Logger.cpp(43,57): error C2065: “file_path”: 未声明的标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\utils\Logger.cpp(43,8): error C2440: “初始化”: 无法从“initializer list”转换为“int”
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\utils\Logger.cpp(44,5): error C2059: 语法错误:“return”
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\utils\Logger.cpp(47,6): error C2653: “Logger”: 不是类或命名空间名称
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\utils\Logger.cpp(49,26): error C2065: “mutex_”: 未声明的标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\utils\Logger.cpp(49,24): error C2641: 无法推导“QMutexLocker”的模板参数
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\utils\Logger.cpp(50,9): error C2065: “log_stream_”: 未声明的标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\utils\Logger.cpp(51,9): error C2065: “log_stream_”: 未声明的标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\utils\Logger.cpp(52,9): error C2065: “log_stream_”: 未声明的标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\utils\Logger.cpp(54,9): error C2065: “log_file_”: 未声明的标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\utils\Logger.cpp(54,22): error C2065: “log_file_”: 未声明的标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\utils\Logger.cpp(55,9): error C2065: “log_file_”: 未声明的标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\utils\Logger.cpp(56,9): error C2065: “log_file_”: 未声明的标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\utils\Logger.cpp(60,6): error C2653: “Logger”: 不是类或命名空间名称
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\utils\Logger.cpp(60,14): error C2182: “Log”: “void” 这一使用无效
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\utils\Logger.cpp(60,18): error C2065: “Level”: 未声明的标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\utils\Logger.cpp(60,24): error C2146: 语法错误: 缺少“)”(在标识符“level”的前面)
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\utils\Logger.cpp(61,1): error C2143: 语法错误: 缺少“;”(在“{”的前面)
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\utils\Logger.cpp(61,1): error C2447: “{”: 缺少函数标题(是否是老式的形式表?)
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\utils\Logger.cpp(80,6): error C2653: “Logger”: 不是类或命名空间名称
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\utils\Logger.cpp(80,78): error C2653: “Level”: 不是类或命名空间名称
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\utils\Logger.cpp(80,74): error C2064: 项不会计算为接受 3 个参数的函数
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\utils\Logger.cpp(81,6): error C2653: “Logger”: 不是类或命名空间名称
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\utils\Logger.cpp(81,78): error C2653: “Level”: 不是类或命名空间名称
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\utils\Logger.cpp(81,74): error C2064: 项不会计算为接受 3 个参数的函数
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\utils\Logger.cpp(82,6): error C2653: “Logger”: 不是类或命名空间名称
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\utils\Logger.cpp(82,78): error C2653: “Level”: 不是类或命名空间名称
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\utils\Logger.cpp(82,74): error C2064: 项不会计算为接受 3 个参数的函数
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\utils\Logger.cpp(83,6): error C2653: “Logger”: 不是类或命名空间名称
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\utils\Logger.cpp(83,78): error C2653: “Level”: 不是类或命名空间名称
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\utils\Logger.cpp(83,74): error C2064: 项不会计算为接受 3 个参数的函数
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\utils\Logger.cpp(84,6): error C2653: “Logger”: 不是类或命名空间名称
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\utils\Logger.cpp(84,78): error C2653: “Level”: 不是类或命名空间名称
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\utils\Logger.cpp(84,74): error C2064: 项不会计算为接受 3 个参数的函数
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\utils\Logger.cpp(86,6): error C2653: “Logger”: 不是类或命名空间名称
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\utils\Logger.cpp(88,28): error C2653: “Logger”: 不是类或命名空间名称
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\utils\Logger.cpp(88,36): error C2065: “MessageHandler”: 未声明的标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\utils\Logger.cpp(91,6): error C2653: “Logger”: 不是类或命名空间名称
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\utils\Logger.cpp(95,5): error C2065: “Level”: 未声明的标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\utils\Logger.cpp(95,11): error C2146: 语法错误: 缺少“;”(在标识符“level”的前面)
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\utils\Logger.cpp(95,11): error C2065: “level”: 未声明的标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\utils\Logger.cpp(95,19): error C2653: “Level”: 不是类或命名空间名称
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\utils\Logger.cpp(97,29): error C2065: “level”: 未声明的标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\utils\Logger.cpp(97,37): error C2653: “Level”: 不是类或命名空间名称
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\utils\Logger.cpp(98,29): error C2065: “level”: 未声明的标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\utils\Logger.cpp(98,37): error C2653: “Level”: 不是类或命名空间名称
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\utils\Logger.cpp(99,29): error C2065: “level”: 未声明的标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\utils\Logger.cpp(99,37): error C2653: “Level”: 不是类或命名空间名称
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\utils\Logger.cpp(100,29): error C2065: “level”: 未声明的标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\utils\Logger.cpp(100,37): error C2653: “Level”: 不是类或命名空间名称
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\utils\Logger.cpp(101,29): error C2065: “level”: 未声明的标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\utils\Logger.cpp(101,37): error C2653: “Level”: 不是类或命名空间名称
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\utils\Logger.cpp(105,5): error C2653: “Logger”: 不是类或命名空间名称
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\utils\Logger.cpp(105,13): error C3861: “Instance”: 找不到标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\utils\Logger.cpp(105,28): error C2065: “level”: 未声明的标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\utils\Logger.cpp(112,9): error C2653: “Logger”: 不是类或命名空间名称
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\utils\Logger.cpp(112,31): error C2065: “Level”: 未声明的标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\utils\Logger.cpp(112,37): error C2146: 语法错误: 缺少“)”(在标识符“level”的前面)
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\utils\Logger.cpp(115,1): error C2143: 语法错误: 缺少“;”(在“{”的前面)
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\utils\Logger.cpp(115,1): error C2447: “{”: 缺少函数标题(是否是老式的形式表?)
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\utils\Logger.cpp(125,13): error C2653: “Logger”: 不是类或命名空间名称
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\utils\Logger.cpp(125,35): error C2065: “Level”: 未声明的标识符
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\utils\Logger.cpp(125,41): error C2146: 语法错误: 缺少“)”(在标识符“level”的前面)
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\utils\Logger.cpp(126,1): error C2143: 语法错误: 缺少“;”(在“{”的前面)
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\utils\Logger.cpp(126,1): error C2447: “{”: 缺少函数标题(是否是老式的形式表?)
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\utils\Logger.cpp(137,1): error C2059: 语法错误:“}”
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\utils\Logger.cpp(137,1): error C2143: 语法错误: 缺少“;”(在“}”的前面)
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\utils\Logger.cpp(138,1): error C2143: 语法错误: 缺少“;”(在“}”的前面)
-G:\0_self_develop_project\Qt_self-pro\link_forge\link_forge\utils\Logger.cpp(138,1): error C2059: 语法错误:“}”
+  moc_main_controller.cpp
+  moc_message_model.cpp
+  moc_communication_manager.cpp
+  moc_channel_manager.cpp
+  moc_plugin_manager.cpp
+  moc_custom_protocol.cpp
+  moc_frame_parser.cpp
+  moc_frame_protocol.cpp
+  moc_modbus_protocol.cpp
+  moc_can_transport.cpp
+  moc_serial_transport.cpp
+  moc_socket_transport.cpp
+  moc_Logger.cpp
+communication_manager.obj : error LNK2019: 无法解析的外部符号 "public: void __cdecl LinkForge::Core::IProtocol::MessageParsed(struct LinkForge::Core::IProtocol::Message const &)" (?MessageParsed@IProtocol@Core@LinkForge@@QEAAXAEBUMessage@123@@Z)，函数 "private: void __cdecl LinkForge::Core::CommunicationManager::SetupConnections(void)" (?SetupConnections@CommunicationManager@Core@LinkForge@@AEAAXXZ) 中引用了该符号
+custom_protocol.obj : error LNK2001: 无法解析的外部符号 "public: void __cdecl LinkForge::Core::IProtocol::MessageParsed(struct LinkForge::Core::IProtocol::Message const &)" (?MessageParsed@IProtocol@Core@LinkForge@@QEAAXAEBUMessage@123@@Z)
+frame_protocol.obj : error LNK2001: 无法解析的外部符号 "public: void __cdecl LinkForge::Core::IProtocol::MessageParsed(struct LinkForge::Core::IProtocol::Message const &)" (?MessageParsed@IProtocol@Core@LinkForge@@QEAAXAEBUMessage@123@@Z)
+modbus_protocol.obj : error LNK2001: 无法解析的外部符号 "public: void __cdecl LinkForge::Core::IProtocol::MessageParsed(struct LinkForge::Core::IProtocol::Message const &)" (?MessageParsed@IProtocol@Core@LinkForge@@QEAAXAEBUMessage@123@@Z)
+communication_manager.obj : error LNK2019: 无法解析的外部符号 "public: void __cdecl LinkForge::Core::IProtocol::ParseError(class QString const &)" (?ParseError@IProtocol@Core@LinkForge@@QEAAXAEBVQString@@@Z)，函数 "private: void __cdecl LinkForge::Core::CommunicationManager::SetupConnections(void)" (?SetupConnections@CommunicationManager@Core@LinkForge@@AEAAXXZ) 中引用了该符号
+custom_protocol.obj : error LNK2001: 无法解析的外部符号 "public: void __cdecl LinkForge::Core::IProtocol::ParseError(class QString const &)" (?ParseError@IProtocol@Core@LinkForge@@QEAAXAEBVQString@@@Z)
+frame_protocol.obj : error LNK2001: 无法解析的外部符号 "public: void __cdecl LinkForge::Core::IProtocol::ParseError(class QString const &)" (?ParseError@IProtocol@Core@LinkForge@@QEAAXAEBVQString@@@Z)
+modbus_protocol.obj : error LNK2001: 无法解析的外部符号 "public: void __cdecl LinkForge::Core::IProtocol::ParseError(class QString const &)" (?ParseError@IProtocol@Core@LinkForge@@QEAAXAEBVQString@@@Z)
+communication_manager.obj : error LNK2019: 无法解析的外部符号 "public: void __cdecl LinkForge::Core::ITransport::DataReceived(class QByteArray const &)" (?DataReceived@ITransport@Core@LinkForge@@QEAAXAEBVQByteArray@@@Z)，函数 "private: void __cdecl LinkForge::Core::CommunicationManager::SetupConnections(void)" (?SetupConnections@CommunicationManager@Core@LinkForge@@AEAAXXZ) 中引用了该符号
+can_transport.obj : error LNK2001: 无法解析的外部符号 "public: void __cdecl LinkForge::Core::ITransport::DataReceived(class QByteArray const &)" (?DataReceived@ITransport@Core@LinkForge@@QEAAXAEBVQByteArray@@@Z)
+serial_transport.obj : error LNK2001: 无法解析的外部符号 "public: void __cdecl LinkForge::Core::ITransport::DataReceived(class QByteArray const &)" (?DataReceived@ITransport@Core@LinkForge@@QEAAXAEBVQByteArray@@@Z)
+socket_transport.obj : error LNK2001: 无法解析的外部符号 "public: void __cdecl LinkForge::Core::ITransport::DataReceived(class QByteArray const &)" (?DataReceived@ITransport@Core@LinkForge@@QEAAXAEBVQByteArray@@@Z)
+communication_manager.obj : error LNK2019: 无法解析的外部符号 "public: void __cdecl LinkForge::Core::ITransport::StateChanged(enum LinkForge::Core::ITransport::State)" (?StateChanged@ITransport@Core@LinkForge@@QEAAXW4State@123@@Z)，函数 "private: void __cdecl LinkForge::Core::CommunicationManager::SetupConnections(void)" (?SetupConnections@CommunicationManager@Core@LinkForge@@AEAAXXZ) 中引用了该符号
+can_transport.obj : error LNK2001: 无法解析的外部符号 "public: void __cdecl LinkForge::Core::ITransport::StateChanged(enum LinkForge::Core::ITransport::State)" (?StateChanged@ITransport@Core@LinkForge@@QEAAXW4State@123@@Z)
+serial_transport.obj : error LNK2001: 无法解析的外部符号 "public: void __cdecl LinkForge::Core::ITransport::StateChanged(enum LinkForge::Core::ITransport::State)" (?StateChanged@ITransport@Core@LinkForge@@QEAAXW4State@123@@Z)
+socket_transport.obj : error LNK2001: 无法解析的外部符号 "public: void __cdecl LinkForge::Core::ITransport::StateChanged(enum LinkForge::Core::ITransport::State)" (?StateChanged@ITransport@Core@LinkForge@@QEAAXW4State@123@@Z)
+communication_manager.obj : error LNK2019: 无法解析的外部符号 "public: void __cdecl LinkForge::Core::ITransport::ErrorOccurred(class QString const &)" (?ErrorOccurred@ITransport@Core@LinkForge@@QEAAXAEBVQString@@@Z)，函数 "private: void __cdecl LinkForge::Core::CommunicationManager::SetupConnections(void)" (?SetupConnections@CommunicationManager@Core@LinkForge@@AEAAXXZ) 中引用了该符号
+can_transport.obj : error LNK2001: 无法解析的外部符号 "public: void __cdecl LinkForge::Core::ITransport::ErrorOccurred(class QString const &)" (?ErrorOccurred@ITransport@Core@LinkForge@@QEAAXAEBVQString@@@Z)
+serial_transport.obj : error LNK2001: 无法解析的外部符号 "public: void __cdecl LinkForge::Core::ITransport::ErrorOccurred(class QString const &)" (?ErrorOccurred@ITransport@Core@LinkForge@@QEAAXAEBVQString@@@Z)
+socket_transport.obj : error LNK2001: 无法解析的外部符号 "public: void __cdecl LinkForge::Core::ITransport::ErrorOccurred(class QString const &)" (?ErrorOccurred@ITransport@Core@LinkForge@@QEAAXAEBVQString@@@Z)
+communication_manager.obj : error LNK2001: 无法解析的外部符号 "public: static struct QMetaObject const LinkForge::Core::IProtocol::staticMetaObject" (?staticMetaObject@IProtocol@Core@LinkForge@@2UQMetaObject@@B)
+moc_custom_protocol.obj : error LNK2001: 无法解析的外部符号 "public: static struct QMetaObject const LinkForge::Core::IProtocol::staticMetaObject" (?staticMetaObject@IProtocol@Core@LinkForge@@2UQMetaObject@@B)
+moc_frame_protocol.obj : error LNK2001: 无法解析的外部符号 "public: static struct QMetaObject const LinkForge::Core::IProtocol::staticMetaObject" (?staticMetaObject@IProtocol@Core@LinkForge@@2UQMetaObject@@B)
+moc_modbus_protocol.obj : error LNK2001: 无法解析的外部符号 "public: static struct QMetaObject const LinkForge::Core::IProtocol::staticMetaObject" (?staticMetaObject@IProtocol@Core@LinkForge@@2UQMetaObject@@B)
+moc_socket_transport.obj : error LNK2001: 无法解析的外部符号 "public: static struct QMetaObject const LinkForge::Core::ITransport::staticMetaObject" (?staticMetaObject@ITransport@Core@LinkForge@@2UQMetaObject@@B)
+communication_manager.obj : error LNK2001: 无法解析的外部符号 "public: static struct QMetaObject const LinkForge::Core::ITransport::staticMetaObject" (?staticMetaObject@ITransport@Core@LinkForge@@2UQMetaObject@@B)
+moc_communication_manager.obj : error LNK2001: 无法解析的外部符号 "public: static struct QMetaObject const LinkForge::Core::ITransport::staticMetaObject" (?staticMetaObject@ITransport@Core@LinkForge@@2UQMetaObject@@B)
+moc_can_transport.obj : error LNK2001: 无法解析的外部符号 "public: static struct QMetaObject const LinkForge::Core::ITransport::staticMetaObject" (?staticMetaObject@ITransport@Core@LinkForge@@2UQMetaObject@@B)
+moc_serial_transport.obj : error LNK2001: 无法解析的外部符号 "public: static struct QMetaObject const LinkForge::Core::ITransport::staticMetaObject" (?staticMetaObject@ITransport@Core@LinkForge@@2UQMetaObject@@B)
+custom_protocol.obj : error LNK2001: 无法解析的外部符号 "public: virtual struct QMetaObject const * __cdecl LinkForge::Core::IProtocol::metaObject(void)const " (?metaObject@IProtocol@Core@LinkForge@@UEBAPEBUQMetaObject@@XZ)
+frame_protocol.obj : error LNK2001: 无法解析的外部符号 "public: virtual struct QMetaObject const * __cdecl LinkForge::Core::IProtocol::metaObject(void)const " (?metaObject@IProtocol@Core@LinkForge@@UEBAPEBUQMetaObject@@XZ)
+modbus_protocol.obj : error LNK2001: 无法解析的外部符号 "public: virtual struct QMetaObject const * __cdecl LinkForge::Core::IProtocol::metaObject(void)const " (?metaObject@IProtocol@Core@LinkForge@@UEBAPEBUQMetaObject@@XZ)
+moc_frame_protocol.obj : error LNK2001: 无法解析的外部符号 "public: virtual void * __cdecl LinkForge::Core::IProtocol::qt_metacast(char const *)" (?qt_metacast@IProtocol@Core@LinkForge@@UEAAPEAXPEBD@Z)
+moc_modbus_protocol.obj : error LNK2001: 无法解析的外部符号 "public: virtual void * __cdecl LinkForge::Core::IProtocol::qt_metacast(char const *)" (?qt_metacast@IProtocol@Core@LinkForge@@UEAAPEAXPEBD@Z)
+custom_protocol.obj : error LNK2001: 无法解析的外部符号 "public: virtual void * __cdecl LinkForge::Core::IProtocol::qt_metacast(char const *)" (?qt_metacast@IProtocol@Core@LinkForge@@UEAAPEAXPEBD@Z)
+frame_protocol.obj : error LNK2001: 无法解析的外部符号 "public: virtual void * __cdecl LinkForge::Core::IProtocol::qt_metacast(char const *)" (?qt_metacast@IProtocol@Core@LinkForge@@UEAAPEAXPEBD@Z)
+modbus_protocol.obj : error LNK2001: 无法解析的外部符号 "public: virtual void * __cdecl LinkForge::Core::IProtocol::qt_metacast(char const *)" (?qt_metacast@IProtocol@Core@LinkForge@@UEAAPEAXPEBD@Z)
+moc_custom_protocol.obj : error LNK2001: 无法解析的外部符号 "public: virtual void * __cdecl LinkForge::Core::IProtocol::qt_metacast(char const *)" (?qt_metacast@IProtocol@Core@LinkForge@@UEAAPEAXPEBD@Z)
+moc_frame_protocol.obj : error LNK2001: 无法解析的外部符号 "public: virtual int __cdecl LinkForge::Core::IProtocol::qt_metacall(enum QMetaObject::Call,int,void * *)" (?qt_metacall@IProtocol@Core@LinkForge@@UEAAHW4Call@QMetaObject@@HPEAPEAX@Z)
+moc_modbus_protocol.obj : error LNK2001: 无法解析的外部符号 "public: virtual int __cdecl LinkForge::Core::IProtocol::qt_metacall(enum QMetaObject::Call,int,void * *)" (?qt_metacall@IProtocol@Core@LinkForge@@UEAAHW4Call@QMetaObject@@HPEAPEAX@Z)
+custom_protocol.obj : error LNK2001: 无法解析的外部符号 "public: virtual int __cdecl LinkForge::Core::IProtocol::qt_metacall(enum QMetaObject::Call,int,void * *)" (?qt_metacall@IProtocol@Core@LinkForge@@UEAAHW4Call@QMetaObject@@HPEAPEAX@Z)
+frame_protocol.obj : error LNK2001: 无法解析的外部符号 "public: virtual int __cdecl LinkForge::Core::IProtocol::qt_metacall(enum QMetaObject::Call,int,void * *)" (?qt_metacall@IProtocol@Core@LinkForge@@UEAAHW4Call@QMetaObject@@HPEAPEAX@Z)
+modbus_protocol.obj : error LNK2001: 无法解析的外部符号 "public: virtual int __cdecl LinkForge::Core::IProtocol::qt_metacall(enum QMetaObject::Call,int,void * *)" (?qt_metacall@IProtocol@Core@LinkForge@@UEAAHW4Call@QMetaObject@@HPEAPEAX@Z)
+moc_custom_protocol.obj : error LNK2001: 无法解析的外部符号 "public: virtual int __cdecl LinkForge::Core::IProtocol::qt_metacall(enum QMetaObject::Call,int,void * *)" (?qt_metacall@IProtocol@Core@LinkForge@@UEAAHW4Call@QMetaObject@@HPEAPEAX@Z)
+frame_protocol.obj : error LNK2019: 无法解析的外部符号 "public: void __cdecl LinkForge::Core::IProtocol::StatusUpdated(class QMap<class QString,class QVariant> const &)" (?StatusUpdated@IProtocol@Core@LinkForge@@QEAAXAEBV?$QMap@VQString@@VQVariant@@@@@Z)，函数 "public: virtual void __cdecl LinkForge::Protocol::FrameProtocol::Reset(void)" (?Reset@FrameProtocol@Protocol@LinkForge@@UEAAXXZ) 中引用了该符号
+can_transport.obj : error LNK2001: 无法解析的外部符号 "public: virtual struct QMetaObject const * __cdecl LinkForge::Core::ITransport::metaObject(void)const " (?metaObject@ITransport@Core@LinkForge@@UEBAPEBUQMetaObject@@XZ)
+serial_transport.obj : error LNK2001: 无法解析的外部符号 "public: virtual struct QMetaObject const * __cdecl LinkForge::Core::ITransport::metaObject(void)const " (?metaObject@ITransport@Core@LinkForge@@UEBAPEBUQMetaObject@@XZ)
+socket_transport.obj : error LNK2001: 无法解析的外部符号 "public: virtual struct QMetaObject const * __cdecl LinkForge::Core::ITransport::metaObject(void)const " (?metaObject@ITransport@Core@LinkForge@@UEBAPEBUQMetaObject@@XZ)
+moc_serial_transport.obj : error LNK2001: 无法解析的外部符号 "public: virtual void * __cdecl LinkForge::Core::ITransport::qt_metacast(char const *)" (?qt_metacast@ITransport@Core@LinkForge@@UEAAPEAXPEBD@Z)
+moc_socket_transport.obj : error LNK2001: 无法解析的外部符号 "public: virtual void * __cdecl LinkForge::Core::ITransport::qt_metacast(char const *)" (?qt_metacast@ITransport@Core@LinkForge@@UEAAPEAXPEBD@Z)
+can_transport.obj : error LNK2001: 无法解析的外部符号 "public: virtual void * __cdecl LinkForge::Core::ITransport::qt_metacast(char const *)" (?qt_metacast@ITransport@Core@LinkForge@@UEAAPEAXPEBD@Z)
+serial_transport.obj : error LNK2001: 无法解析的外部符号 "public: virtual void * __cdecl LinkForge::Core::ITransport::qt_metacast(char const *)" (?qt_metacast@ITransport@Core@LinkForge@@UEAAPEAXPEBD@Z)
+socket_transport.obj : error LNK2001: 无法解析的外部符号 "public: virtual void * __cdecl LinkForge::Core::ITransport::qt_metacast(char const *)" (?qt_metacast@ITransport@Core@LinkForge@@UEAAPEAXPEBD@Z)
+moc_can_transport.obj : error LNK2001: 无法解析的外部符号 "public: virtual void * __cdecl LinkForge::Core::ITransport::qt_metacast(char const *)" (?qt_metacast@ITransport@Core@LinkForge@@UEAAPEAXPEBD@Z)
+moc_serial_transport.obj : error LNK2001: 无法解析的外部符号 "public: virtual int __cdecl LinkForge::Core::ITransport::qt_metacall(enum QMetaObject::Call,int,void * *)" (?qt_metacall@ITransport@Core@LinkForge@@UEAAHW4Call@QMetaObject@@HPEAPEAX@Z)
+moc_socket_transport.obj : error LNK2001: 无法解析的外部符号 "public: virtual int __cdecl LinkForge::Core::ITransport::qt_metacall(enum QMetaObject::Call,int,void * *)" (?qt_metacall@ITransport@Core@LinkForge@@UEAAHW4Call@QMetaObject@@HPEAPEAX@Z)
+can_transport.obj : error LNK2001: 无法解析的外部符号 "public: virtual int __cdecl LinkForge::Core::ITransport::qt_metacall(enum QMetaObject::Call,int,void * *)" (?qt_metacall@ITransport@Core@LinkForge@@UEAAHW4Call@QMetaObject@@HPEAPEAX@Z)
+serial_transport.obj : error LNK2001: 无法解析的外部符号 "public: virtual int __cdecl LinkForge::Core::ITransport::qt_metacall(enum QMetaObject::Call,int,void * *)" (?qt_metacall@ITransport@Core@LinkForge@@UEAAHW4Call@QMetaObject@@HPEAPEAX@Z)
+socket_transport.obj : error LNK2001: 无法解析的外部符号 "public: virtual int __cdecl LinkForge::Core::ITransport::qt_metacall(enum QMetaObject::Call,int,void * *)" (?qt_metacall@ITransport@Core@LinkForge@@UEAAHW4Call@QMetaObject@@HPEAPEAX@Z)
+moc_can_transport.obj : error LNK2001: 无法解析的外部符号 "public: virtual int __cdecl LinkForge::Core::ITransport::qt_metacall(enum QMetaObject::Call,int,void * *)" (?qt_metacall@ITransport@Core@LinkForge@@UEAAHW4Call@QMetaObject@@HPEAPEAX@Z)
+can_transport.obj : error LNK2019: 无法解析的外部符号 "public: void __cdecl LinkForge::Core::ITransport::Connected(void)" (?Connected@ITransport@Core@LinkForge@@QEAAXXZ)，函数 "private: void __cdecl LinkForge::Transport::CanTransport::OnStateChanged(enum QCanBusDevice::CanBusDeviceState)" (?OnStateChanged@CanTransport@Transport@LinkForge@@AEAAXW4CanBusDeviceState@QCanBusDevice@@@Z) 中引用了该符号
+serial_transport.obj : error LNK2001: 无法解析的外部符号 "public: void __cdecl LinkForge::Core::ITransport::Connected(void)" (?Connected@ITransport@Core@LinkForge@@QEAAXXZ)
+socket_transport.obj : error LNK2001: 无法解析的外部符号 "public: void __cdecl LinkForge::Core::ITransport::Connected(void)" (?Connected@ITransport@Core@LinkForge@@QEAAXXZ)
+can_transport.obj : error LNK2019: 无法解析的外部符号 "public: void __cdecl LinkForge::Core::ITransport::Disconnected(void)" (?Disconnected@ITransport@Core@LinkForge@@QEAAXXZ)，函数 "public: virtual void __cdecl LinkForge::Transport::CanTransport::Disconnect(void)" (?Disconnect@CanTransport@Transport@LinkForge@@UEAAXXZ) 中引用了该符号
+serial_transport.obj : error LNK2001: 无法解析的外部符号 "public: void __cdecl LinkForge::Core::ITransport::Disconnected(void)" (?Disconnected@ITransport@Core@LinkForge@@QEAAXXZ)
+socket_transport.obj : error LNK2001: 无法解析的外部符号 "public: void __cdecl LinkForge::Core::ITransport::Disconnected(void)" (?Disconnected@ITransport@Core@LinkForge@@QEAAXXZ)
+ConfigManager.obj : error LNK2001: 无法解析的外部符号 "public: virtual struct QMetaObject const * __cdecl LinkForge::Utils::ConfigManager::metaObject(void)const " (?metaObject@ConfigManager@Utils@LinkForge@@UEBAPEBUQMetaObject@@XZ)
+ConfigManager.obj : error LNK2001: 无法解析的外部符号 "public: virtual void * __cdecl LinkForge::Utils::ConfigManager::qt_metacast(char const *)" (?qt_metacast@ConfigManager@Utils@LinkForge@@UEAAPEAXPEBD@Z)
+ConfigManager.obj : error LNK2001: 无法解析的外部符号 "public: virtual int __cdecl LinkForge::Utils::ConfigManager::qt_metacall(enum QMetaObject::Call,int,void * *)" (?qt_metacall@ConfigManager@Utils@LinkForge@@UEAAHW4Call@QMetaObject@@HPEAPEAX@Z)
+ConfigManager.obj : error LNK2019: 无法解析的外部符号 "public: void __cdecl LinkForge::Utils::ConfigManager::ConfigChanged(class QString const &,class QVariant const &)" (?ConfigChanged@ConfigManager@Utils@LinkForge@@QEAAXAEBVQString@@AEBVQVariant@@@Z)，函数 "public: void __cdecl LinkForge::Utils::ConfigManager::SetProtocolConfig(class QString const &,class QMap<class QString,class QVariant> const &)" (?SetProtocolConfig@ConfigManager@Utils@LinkForge@@QEAAXAEBVQString@@AEBV?$QMap@VQString@@VQVariant@@@@@Z) 中引用了该符号
+G:\0_self_develop_project\Qt_self-pro\link_forge\x64\Debug\link_forge.exe : fatal error LNK1120: 20 个无法解析的外部命令

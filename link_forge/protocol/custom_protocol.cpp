@@ -23,6 +23,7 @@ std::optional<QByteArray> CustomProtocol::BuildMessage(const QVariantMap& payloa
     QByteArray data = payload.value("data").toByteArray();
     if (data.isEmpty()) {
         const QString cmd = payload.value("command").toString();
+        if (!cmd.isEmpty()) {
             data = cmd.toUtf8();
         }
     }
@@ -144,6 +145,7 @@ Core::IProtocol::Message CustomProtocol::ParseFrame(const QByteArray& frame)
     msg.timestamp_ms = QDateTime::currentMSecsSinceEpoch();
     msg.raw_data     = frame;
 
+    if (!ValidateMessage(frame)) {
         msg.is_valid = false;
         return msg;
     }
@@ -173,8 +175,7 @@ std::optional<QByteArray> JsonProtocol::BuildMessage(const QVariantMap& payload)
 
     const QJsonObject json = QJsonObject::fromVariantMap(payload);
     QByteArray data = QJsonDocument(json).toJson(QJsonDocument::Compact);
-    data.append('
-'); // newline delimiter
+    data.append('\n'); // newline delimiter
     return data;
 }
 
@@ -186,8 +187,7 @@ std::vector<Core::IProtocol::Message> JsonProtocol::ParseData(const QByteArray& 
     receive_buffer_.append(data);
 
     while (true) {
-        const int pos = receive_buffer_.indexOf('
-');
+        const int pos = receive_buffer_.indexOf('\n');
         if (pos == -1) {
             break;
         }

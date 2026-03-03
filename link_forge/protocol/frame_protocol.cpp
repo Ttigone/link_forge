@@ -149,7 +149,7 @@ void FrameProtocol::Reset()
 {
     QMutexLocker lock(&mutex_);
     parser_.Reset();
-    emit StatusUpdated(QStringLiteral("FrameProtocol reset"));
+    emit StatusUpdated({{QStringLiteral("message"), QStringLiteral("FrameProtocol reset")}});
 }
 
 // ────────────────────────────────────────────────────────────────────────────
